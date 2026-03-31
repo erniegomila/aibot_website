@@ -288,7 +288,7 @@ export default function HomePage() {
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "2rem" }}>
               {steps.map((s, i) => (
                 <div key={s.n} className="glow-card" style={{ borderRadius: "1.25rem", padding: "2.25rem" }}>
-                  <div style={{ color: "rgba(67,97,238,0.25)", fontSize: "3rem", fontWeight: 800, lineHeight: 1, marginBottom: "1.25rem" }}>
+                  <div style={{ color: "#bfdbfe", fontSize: "3rem", fontWeight: 800, lineHeight: 1, marginBottom: "1.25rem" }}>
                     {s.n}
                   </div>
                   <h3 style={{ color: "#0f172a", fontWeight: 700, fontSize: "1.125rem", marginBottom: "0.875rem" }}>{s.title}</h3>
@@ -334,7 +334,7 @@ export default function HomePage() {
                 <div style={{ marginBottom: "1.75rem", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
                   {[{ label: "Email", val: "contact@getbotti.com" }, { label: "Hours", val: "Mon–Fri, 9 AM–5 PM" }].map((row) => (
                     <div key={row.label} style={{ display: "flex", gap: "0.5rem" }}>
-                      <span style={{ color: "#94a3b8", fontSize: "0.875rem", minWidth: "48px" }}>{row.label}:</span>
+                      <span style={{ color: "#64748b", fontSize: "0.875rem", minWidth: "48px" }}>{row.label}:</span>
                       <span style={{ color: "#334155", fontSize: "0.875rem" }}>{row.val}</span>
                     </div>
                   ))}
@@ -401,8 +401,8 @@ export default function HomePage() {
             </div>
 
             <div style={{ borderTop: "1px solid #e2e8f0", paddingTop: "1.5rem", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.75rem" }}>
-              <div style={{ color: "#94a3b8", fontSize: "0.8rem" }}>© 2026 botti. All rights reserved.</div>
-              <div style={{ color: "#cbd5e1", fontSize: "0.8rem" }}>contact@getbotti.com · getbotti.com</div>
+              <div style={{ color: "#64748b", fontSize: "0.8rem" }}>© 2026 botti. All rights reserved.</div>
+              <div style={{ color: "#64748b", fontSize: "0.8rem" }}>contact@getbotti.com · getbotti.com</div>
             </div>
           </div>
         </footer>

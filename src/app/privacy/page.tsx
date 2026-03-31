@@ -47,7 +47,7 @@ export default function PrivacyPage() {
           {sections.map((s, i) => (
             <div key={s.title} style={{ background: "#ffffff", border: "1px solid #e2e8f0", borderRadius: "1rem", padding: "1.75rem 2rem", boxShadow: "0 1px 4px rgba(0,0,0,0.04)" }}>
               <div style={{ display: "flex", alignItems: "flex-start", gap: "1rem" }}>
-                <div style={{ color: "rgba(67,97,238,0.35)", fontWeight: 800, fontSize: "1.1rem", minWidth: "28px", paddingTop: "2px" }}>
+                <div style={{ color: "#93c5fd", fontWeight: 800, fontSize: "1.1rem", minWidth: "28px", paddingTop: "2px" }}>
                   {String(i + 1).padStart(2, "0")}
                 </div>
                 <div>
