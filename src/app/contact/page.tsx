@@ -13,9 +13,8 @@ export default function ContactPage() {
     <main style={{ minHeight: "100vh", background: "#f8fafc", color: "#0f172a" }}>
       <header style={{ borderBottom: "1px solid #e2e8f0", background: "rgba(255,255,255,0.95)", backdropFilter: "blur(16px)", position: "sticky", top: 0, zIndex: 50 }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 1.5rem", height: "72px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <Link href="/" style={{ display: "flex", alignItems: "center", gap: "0.625rem" }}>
-            <Image src="/logo.png" alt="botti logo" width={40} height={40} style={{ width: "40px", height: "auto", objectFit: "contain" }} />
-            <span style={{ color: "#0f172a", fontWeight: 700, fontSize: "1.05rem" }}>botti</span>
+          <Link href="/" style={{ display: "flex", alignItems: "center" }}>
+            <Image src="/logo.png" alt="botti logo" width={40} height={40} style={{ width: "auto", height: "44px", objectFit: "contain" }} />
           </Link>
           <Link href="/" style={{ display: "flex", alignItems: "center", gap: "0.4rem", color: "#64748b", fontSize: "0.875rem", fontWeight: 500 }}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
