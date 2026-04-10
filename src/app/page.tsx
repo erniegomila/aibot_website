@@ -136,7 +136,7 @@ export default function HomePage() {
       <main style={{ overflowX: "hidden" }}>
         {/* ── Hero ──────────────────────────────────── */}
         <section
-          className="grid-bg"
+          className="grid-bg hero-section mobile-section"
           style={{ position: "relative", minHeight: "90vh", display: "flex", alignItems: "center", background: "#ffffff" }}
         >
           <div className="orb orb-blue" style={{ width: "600px", height: "600px", top: "-200px", left: "-200px" }} />
@@ -151,17 +151,17 @@ export default function HomePage() {
                   AI Messaging Platform
                 </div>
 
-                <h1 style={{ fontSize: "clamp(2.4rem, 5vw, 3.75rem)", fontWeight: 800, lineHeight: 1.1, letterSpacing: "-0.02em", color: "#0f172a", marginBottom: "1.5rem" }}>
+                <h1 className="hero-h1" style={{ fontSize: "clamp(2.4rem, 5vw, 3.75rem)", fontWeight: 800, lineHeight: 1.1, letterSpacing: "-0.02em", color: "#0f172a", marginBottom: "1.5rem" }}>
                   Smarter customer{" "}
                   <span className="gradient-text">conversations</span>
                   {", "}without the busywork.
                 </h1>
 
-                <p style={{ fontSize: "1.125rem", lineHeight: 1.75, color: "#64748b", marginBottom: "2.5rem", maxWidth: "480px" }}>
+                <p className="hero-p" style={{ fontSize: "1.125rem", lineHeight: 1.75, color: "#64748b", marginBottom: "2.5rem", maxWidth: "480px" }}>
                   botti helps businesses respond faster through web chat, SMS, and WhatsApp with AI-powered messaging and seamless human handoff when needed.
                 </p>
 
-                <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", marginBottom: "2.5rem" }}>
+                <div className="hero-btns" style={{ display: "flex", flexWrap: "wrap", gap: "1rem", marginBottom: "2.5rem" }}>
                   <Link href="/terms" className="btn-primary">View Terms</Link>
                   <Link href="/privacy" className="btn-outline">Privacy Policy</Link>
                 </div>
@@ -186,7 +186,7 @@ export default function HomePage() {
         {/* ── Stats ─────────────────────────────────── */}
         <section style={{ background: "#f8fafc", borderTop: "1px solid #e2e8f0", borderBottom: "1px solid #e2e8f0" }}>
           <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "3rem 1.5rem" }}>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: "1rem" }}>
+            <div className="stats-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: "1rem" }}>
               {stats.map((s) => (
                 <div key={s.value} className="stat-card">
                   <div className="stat-number">{s.value}</div>
@@ -198,7 +198,7 @@ export default function HomePage() {
         </section>
 
         {/* ── Features ──────────────────────────────── */}
-        <section id="features" style={{ padding: "6rem 1.5rem", background: "#ffffff" }}>
+        <section id="features" className="mobile-section" style={{ padding: "6rem 1.5rem", background: "#ffffff" }}>
           <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
             <div style={{ textAlign: "center", marginBottom: "3.5rem" }}>
               <div className="section-label" style={{ margin: "0 auto 1.25rem" }}>What We Do</div>
@@ -224,7 +224,7 @@ export default function HomePage() {
         </section>
 
         {/* ── About ─────────────────────────────────── */}
-        <section id="about" style={{ background: "#f8fafc", padding: "6rem 1.5rem", borderTop: "1px solid #e2e8f0" }}>
+        <section id="about" className="mobile-section" style={{ background: "#f8fafc", padding: "6rem 1.5rem", borderTop: "1px solid #e2e8f0" }}>
           <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4rem", alignItems: "center" }} className="about-grid">
               {/* Left — Visual */}
@@ -276,7 +276,7 @@ export default function HomePage() {
         </section>
 
         {/* ── How It Works ──────────────────────────── */}
-        <section id="how-it-works" style={{ padding: "6rem 1.5rem", background: "#ffffff" }}>
+        <section id="how-it-works" className="mobile-section" style={{ padding: "6rem 1.5rem", background: "#ffffff" }}>
           <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
             <div style={{ textAlign: "center", marginBottom: "3.5rem" }}>
               <div className="section-label" style={{ margin: "0 auto 1.25rem" }}>How It Works</div>
@@ -307,7 +307,7 @@ export default function HomePage() {
         </section>
 
         {/* ── Privacy & Contact ─────────────────────── */}
-        <section style={{ background: "#f8fafc", padding: "6rem 1.5rem", borderTop: "1px solid #e2e8f0" }}>
+        <section className="mobile-section" style={{ background: "#f8fafc", padding: "6rem 1.5rem", borderTop: "1px solid #e2e8f0" }}>
           <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "2rem" }}>
               <div className="glow-card" style={{ borderRadius: "1.25rem", padding: "2.25rem" }}>
@@ -347,10 +347,85 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* ── Try It Out — SMS CTA ─────────────────── */}
+        <section id="try-it" className="mobile-section" style={{ padding: "6rem 1.5rem", background: "#ffffff" }}>
+          <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4rem", alignItems: "center" }} className="try-it-grid">
+              {/* Left — Text */}
+              <div>
+                <div className="section-label" style={{ marginBottom: "1.25rem" }}>
+                  <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#22c55e", display: "inline-block" }} />
+                  Live Demo
+                </div>
+                <h2 style={{ fontSize: "clamp(1.75rem, 3.5vw, 2.75rem)", fontWeight: 800, color: "#0f172a", letterSpacing: "-0.02em", lineHeight: 1.2, marginBottom: "1.25rem" }}>
+                  Try us out by{" "}
+                  <span className="gradient-text">texting us</span>
+                </h2>
+                <p style={{ color: "#64748b", lineHeight: 1.8, fontSize: "1.0625rem", marginBottom: "2rem", maxWidth: "440px" }}>
+                  Send a text to the number on the right and experience botti firsthand. Ask a question, say hello, or just say "Hi" — our AI will respond in seconds.
+                </p>
+                <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+                  {[
+                    "Reply STOP at any time to opt out",
+                    "Message & data rates may apply",
+                    "Powered by botti AI",
+                  ].map((note) => (
+                    <div key={note} style={{ display: "flex", alignItems: "center", gap: "0.5rem", color: "#64748b", fontSize: "0.875rem" }}>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4361ee" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                      {note}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Right — Phone number card */}
+              <div style={{ display: "flex", justifyContent: "center" }}>
+                <div style={{ background: "#ffffff", border: "1px solid #e2e8f0", borderRadius: "1.5rem", padding: "2.5rem", boxShadow: "0 8px 40px rgba(67,97,238,0.08)", textAlign: "center", maxWidth: "320px", width: "100%" }}>
+                  {/* Phone icon */}
+                  <div style={{ width: "64px", height: "64px", borderRadius: "1rem", background: "linear-gradient(135deg, rgba(67,97,238,0.1), rgba(2,132,199,0.06))", border: "1px solid rgba(67,97,238,0.2)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 1.5rem", color: "#4361ee" }}>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.4 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                  </div>
+
+                  <div style={{ color: "#94a3b8", fontSize: "0.8rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "0.625rem" }}>
+                    Text us at
+                  </div>
+
+                  <div className="phone-number" style={{ fontSize: "2rem", fontWeight: 800, color: "#0f172a", letterSpacing: "0.02em", marginBottom: "0.5rem" }}>
+                    (555) 867-5309
+                  </div>
+
+                  <div style={{ color: "#94a3b8", fontSize: "0.8rem", marginBottom: "1.75rem" }}>
+                    SMS · Available Mon–Fri, 9 AM–5 PM
+                  </div>
+
+                  <a
+                    href="sms:+15558675309"
+                    className="btn-primary"
+                    style={{ display: "block", textAlign: "center", fontSize: "0.9375rem" }}
+                  >
+                    Open in Messages
+                  </a>
+
+                  <p style={{ color: "#94a3b8", fontSize: "0.75rem", marginTop: "1rem", lineHeight: 1.6 }}>
+                    By texting us you agree to our{" "}
+                    <Link href="/terms" style={{ color: "#4361ee", textDecoration: "underline" }}>Terms</Link>
+                    {" & "}
+                    <Link href="/privacy" style={{ color: "#4361ee", textDecoration: "underline" }}>Privacy Policy</Link>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ── CTA Banner ────────────────────────────── */}
-        <section style={{ padding: "6rem 1.5rem", background: "#ffffff" }}>
+        <section className="mobile-section" style={{ padding: "6rem 1.5rem", background: "#ffffff" }}>
           <div style={{ maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>
-            <div style={{ background: "linear-gradient(135deg, rgba(67,97,238,0.06) 0%, rgba(2,132,199,0.04) 100%)", border: "1px solid rgba(67,97,238,0.15)", borderRadius: "1.5rem", padding: "4rem 2rem", position: "relative", overflow: "hidden" }}>
+            <div className="cta-inner" style={{ background: "linear-gradient(135deg, rgba(67,97,238,0.06) 0%, rgba(2,132,199,0.04) 100%)", border: "1px solid rgba(67,97,238,0.15)", borderRadius: "1.5rem", padding: "4rem 2rem", position: "relative", overflow: "hidden" }}>
               <div className="orb orb-blue" style={{ width: "300px", height: "300px", top: "-150px", right: "-100px", filter: "blur(60px)" }} />
               <div className="section-label" style={{ margin: "0 auto 1.5rem" }}>Get Started Today</div>
               <h2 style={{ fontSize: "clamp(1.75rem, 4vw, 3rem)", fontWeight: 800, color: "#0f172a", letterSpacing: "-0.02em", lineHeight: 1.15, marginBottom: "1.25rem", position: "relative" }}>
@@ -400,7 +475,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div style={{ borderTop: "1px solid #e2e8f0", paddingTop: "1.5rem", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.75rem" }}>
+            <div className="footer-bottom" style={{ borderTop: "1px solid #e2e8f0", paddingTop: "1.5rem", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.75rem" }}>
               <div style={{ color: "#64748b", fontSize: "0.8rem" }}>© 2026 botti. All rights reserved.</div>
               <div style={{ color: "#64748b", fontSize: "0.8rem" }}>contact@getbotti.com · getbotti.com</div>
             </div>
@@ -409,16 +484,63 @@ export default function HomePage() {
       </main>
 
       <style>{`
-        @media (max-width: 768px) {
-          .hero-grid { grid-template-columns: 1fr !important; gap: 3rem !important; }
-          .hero-visual { display: none !important; }
-          .about-grid { grid-template-columns: 1fr !important; }
-          .about-visual { display: none !important; }
-          .footer-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
-        }
+        /* ── Bounce animation for chat dots ── */
         @keyframes bounce {
           from { transform: translateY(0); }
-          to { transform: translateY(-5px); }
+          to   { transform: translateY(-5px); }
+        }
+
+        /* ── Tablet & below (≤ 900px) ── */
+        @media (max-width: 900px) {
+          .hero-grid  { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
+          .about-grid { grid-template-columns: 1fr !important; gap: 2rem   !important; }
+          .footer-grid{ grid-template-columns: 1fr !important; gap: 2rem   !important; }
+        }
+
+        /* ── Mobile (≤ 640px) ── */
+        @media (max-width: 640px) {
+          /* Hide decorative side visuals to reduce clutter */
+          .hero-visual  { display: none !important; }
+          .about-visual { display: none !important; }
+
+          /* Hero: reduce height so it doesn't eat the whole screen */
+          .hero-section { min-height: unset !important; padding-top: 3rem !important; padding-bottom: 3rem !important; }
+
+          /* Section vertical padding: 6rem → 3rem */
+          .mobile-section { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+
+          /* Hero h1: tighten up */
+          .hero-h1 { font-size: clamp(1.9rem, 8vw, 2.5rem) !important; margin-bottom: 1rem !important; }
+
+          /* Hero subtitle */
+          .hero-p  { font-size: 1rem !important; margin-bottom: 1.75rem !important; }
+
+          /* Buttons: full-width stacked on tiny screens */
+          .hero-btns { flex-direction: column !important; }
+          .hero-btns a { width: 100% !important; text-align: center !important; }
+
+          /* Stats: 2-column grid on small screens */
+          .stats-grid { grid-template-columns: 1fr 1fr !important; }
+          .stat-card  { padding: 1.25rem 0.75rem !important; }
+          .stat-number{ font-size: 2.25rem !important; }
+
+          /* Feature / step cards: 1 column, less padding */
+          .glow-card  { padding: 1.5rem !important; }
+
+          /* Section headings */
+          .section-h2 { font-size: clamp(1.5rem, 6vw, 2rem) !important; }
+
+          /* Try-it section: stack vertically */
+          .try-it-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+
+          /* Phone number card: shrink font */
+          .phone-number { font-size: 1.5rem !important; }
+
+          /* CTA banner: reduce inner padding */
+          .cta-inner { padding: 2.5rem 1.25rem !important; }
+
+          /* Footer: tighter */
+          .footer-bottom { flex-direction: column !important; gap: 0.5rem !important; text-align: center !important; }
         }
       `}</style>
     </>
