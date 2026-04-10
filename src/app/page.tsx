@@ -347,6 +347,81 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* ── Try It Out — SMS CTA ─────────────────── */}
+        <section id="try-it" style={{ padding: "6rem 1.5rem", background: "#ffffff" }}>
+          <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4rem", alignItems: "center" }} className="hero-grid">
+              {/* Left — Text */}
+              <div>
+                <div className="section-label" style={{ marginBottom: "1.25rem" }}>
+                  <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#22c55e", display: "inline-block" }} />
+                  Live Demo
+                </div>
+                <h2 style={{ fontSize: "clamp(1.75rem, 3.5vw, 2.75rem)", fontWeight: 800, color: "#0f172a", letterSpacing: "-0.02em", lineHeight: 1.2, marginBottom: "1.25rem" }}>
+                  Try us out by{" "}
+                  <span className="gradient-text">texting us</span>
+                </h2>
+                <p style={{ color: "#64748b", lineHeight: 1.8, fontSize: "1.0625rem", marginBottom: "2rem", maxWidth: "440px" }}>
+                  Send a text to the number on the right and experience botti firsthand. Ask a question, say hello, or just say "Hi" — our AI will respond in seconds.
+                </p>
+                <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+                  {[
+                    "Reply STOP at any time to opt out",
+                    "Message & data rates may apply",
+                    "Powered by botti AI",
+                  ].map((note) => (
+                    <div key={note} style={{ display: "flex", alignItems: "center", gap: "0.5rem", color: "#64748b", fontSize: "0.875rem" }}>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4361ee" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                      {note}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Right — Phone number card */}
+              <div style={{ display: "flex", justifyContent: "center" }}>
+                <div style={{ background: "#ffffff", border: "1px solid #e2e8f0", borderRadius: "1.5rem", padding: "2.5rem", boxShadow: "0 8px 40px rgba(67,97,238,0.08)", textAlign: "center", maxWidth: "320px", width: "100%" }}>
+                  {/* Phone icon */}
+                  <div style={{ width: "64px", height: "64px", borderRadius: "1rem", background: "linear-gradient(135deg, rgba(67,97,238,0.1), rgba(2,132,199,0.06))", border: "1px solid rgba(67,97,238,0.2)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 1.5rem", color: "#4361ee" }}>
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.4 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                  </div>
+
+                  <div style={{ color: "#94a3b8", fontSize: "0.8rem", fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: "0.625rem" }}>
+                    Text us at
+                  </div>
+
+                  <div style={{ fontSize: "2rem", fontWeight: 800, color: "#0f172a", letterSpacing: "0.02em", marginBottom: "0.5rem" }}>
+                    (555) 867-5309
+                  </div>
+
+                  <div style={{ color: "#94a3b8", fontSize: "0.8rem", marginBottom: "1.75rem" }}>
+                    SMS · Available Mon–Fri, 9 AM–5 PM
+                  </div>
+
+                  <a
+                    href="sms:+15558675309"
+                    className="btn-primary"
+                    style={{ display: "block", textAlign: "center", fontSize: "0.9375rem" }}
+                  >
+                    Open in Messages
+                  </a>
+
+                  <p style={{ color: "#94a3b8", fontSize: "0.75rem", marginTop: "1rem", lineHeight: 1.6 }}>
+                    By texting us you agree to our{" "}
+                    <Link href="/terms" style={{ color: "#4361ee", textDecoration: "underline" }}>Terms</Link>
+                    {" & "}
+                    <Link href="/privacy" style={{ color: "#4361ee", textDecoration: "underline" }}>Privacy Policy</Link>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ── CTA Banner ────────────────────────────── */}
         <section style={{ padding: "6rem 1.5rem", background: "#ffffff" }}>
           <div style={{ maxWidth: "900px", margin: "0 auto", textAlign: "center" }}>
