@@ -65,7 +65,7 @@ export default function PrivacyPage() {
         </div>
       </header>
 
-      <div style={{ maxWidth: "800px", margin: "0 auto", padding: "4rem 1.5rem 6rem" }}>
+      <div style={{ maxWidth: "800px", margin: "0 auto", padding: "clamp(2rem, 5vw, 4rem) 1.25rem clamp(3rem, 8vw, 6rem)" }}>
         <div style={{ marginBottom: "3rem" }}>
           <div style={{ display: "inline-flex", padding: "0.35rem 1rem", borderRadius: "9999px", border: "1px solid rgba(67,97,238,0.25)", background: "rgba(67,97,238,0.06)", color: "#4361ee", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "1rem" }}>
             Privacy Policy

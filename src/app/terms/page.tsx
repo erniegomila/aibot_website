@@ -69,7 +69,7 @@ export default function TermsPage() {
         </div>
       </header>
 
-      <div style={{ maxWidth: "800px", margin: "0 auto", padding: "4rem 1.5rem 6rem" }}>
+      <div style={{ maxWidth: "800px", margin: "0 auto", padding: "clamp(2rem, 5vw, 4rem) 1.25rem clamp(3rem, 8vw, 6rem)" }}>
         <div style={{ marginBottom: "3rem" }}>
           <div style={{ display: "inline-flex", padding: "0.35rem 1rem", borderRadius: "9999px", border: "1px solid rgba(67,97,238,0.25)", background: "rgba(67,97,238,0.06)", color: "#4361ee", fontSize: "0.8rem", fontWeight: 600, letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: "1rem" }}>
             Terms & Conditions
@@ -86,7 +86,7 @@ export default function TermsPage() {
         {/* Quick-reference SMS disclosure */}
         <div style={{ background: "#ffffff", border: "1px solid #e2e8f0", borderRadius: "1rem", padding: "1.5rem 2rem", marginBottom: "2rem", boxShadow: "0 1px 4px rgba(0,0,0,0.04)" }}>
           <h2 style={{ color: "#0f172a", fontWeight: 700, fontSize: "0.9375rem", marginBottom: "0.875rem" }}>SMS Quick Reference</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "0.75rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", gap: "0.75rem" }}>
             {[
               { label: "To stop messages", value: "Reply STOP" },
               { label: "For help", value: "Reply HELP" },
