@@ -268,7 +268,7 @@ export default function HomePage() {
                   <Link href="/contact" className="btn-primary" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
                     Get in Touch <IconArrow />
                   </Link>
-                  <Link href="/privacy" className="btn-outline">Our Privacy Policy</Link>
+                  <a href="#try-it" className="btn-outline">Try It Out</a>
                 </div>
               </div>
             </div>
