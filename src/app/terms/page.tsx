@@ -11,8 +11,12 @@ const sections = [
     body: "botti provides AI-assisted customer messaging services for businesses. Messages sent through botti may include: responses to customer inquiries and support requests, service-related updates and follow-ups, appointment or order confirmations you have requested, and informational messages directly related to services you have engaged with. Messages are transactional and conversational in nature — not promotional mass marketing.",
   },
   {
+    title: "SMS Communication & Consent",
+    body: "By providing your mobile phone number through our website forms, contact forms, application forms, or any other communication channel, you expressly consent to receive text messages (SMS/MMS) from botti related to: fraud protection alerts, service updates, appointment reminders, account notifications, customer service communications, and marketing or promotional offers (if applicable). Message frequency may vary depending on your interaction with our services. Message and data rates may apply.",
+  },
+  {
     title: "How to Opt In",
-    body: "You opt in to receive SMS messages from botti by: (1) submitting a web form that includes a clear consent disclosure, (2) sending a message to our number first, or (3) verbally or otherwise providing explicit consent. Consent is never a condition of purchase or use of any service. By opting in, you confirm you are the authorized user of the phone number provided.",
+    body: "Customers opt in to receive SMS messages by: (1) submitting their phone number through our website contact forms, (2) completing signup or waitlist forms, (3) requesting information via online forms, or (4) verbally consenting during phone conversations. By submitting your phone number, you confirm that you are the authorized user of the mobile number provided and consent to receive communications as described above. Consent is never a condition of purchase or use of any service.",
   },
   {
     title: "Message Frequency",
@@ -24,11 +28,11 @@ const sections = [
   },
   {
     title: "How to Opt Out",
-    body: "You may opt out of receiving SMS messages at any time by replying STOP to any message from us. After sending STOP, you will receive one final confirmation message and no further messages will be sent to your number. To re-subscribe, you may opt in again at any time through our website or by messaging us directly.",
+    body: "You may opt out of receiving SMS messages at any time by: (1) replying STOP to any message, (2) contacting us directly at botti@getbotti.com, or (3) calling us at (877) 565-4888. After you send STOP, you will receive a confirmation message and will no longer receive SMS communications unless you re-subscribe.",
   },
   {
     title: "How to Get Help",
-    body: "For assistance with our messaging service, reply HELP to any message from us, or contact our support team directly at contact@getbotti.com. Support is available Monday through Friday, 9 AM to 5 PM.",
+    body: "For assistance with our messaging service, reply HELP to any message from us, or contact our support team directly at botti@getbotti.com or by calling (877) 565-4888. Support is available Monday through Friday, 9 AM to 5 PM.",
   },
   {
     title: "Privacy and Data Use",
@@ -80,7 +84,7 @@ export default function TermsPage() {
               Terms & Conditions
             </span>
           </h1>
-          <p style={{ color: "#64748b", fontSize: "0.875rem" }}>Effective date: March 27, 2026 &nbsp;·&nbsp; Business: botti &nbsp;·&nbsp; Website: getbotti.com &nbsp;·&nbsp; Contact: contact@getbotti.com</p>
+          <p style={{ color: "#64748b", fontSize: "0.875rem" }}>Effective date: March 27, 2026 &nbsp;·&nbsp; Business: botti &nbsp;·&nbsp; Website: getbotti.com &nbsp;·&nbsp; Contact: botti@getbotti.com</p>
         </div>
 
         {/* Quick-reference SMS disclosure */}

@@ -15,24 +15,32 @@ const sections = [
     body: "We use the information we collect solely to: respond to your inquiries and support requests, deliver service-related updates and follow-ups you have requested, improve the quality and reliability of our platform, and maintain the security and integrity of our systems. We do not use your information for any purpose beyond providing the services you have consented to receive.",
   },
   {
+    title: "SMS Communication & Consent",
+    body: "By providing your mobile phone number through our website forms, contact forms, application forms, or any other communication channel, you expressly consent to receive text messages (SMS/MMS) from botti related to: fraud protection alerts, service updates, appointment reminders, account notifications, customer service communications, and marketing or promotional offers (if applicable). Message frequency may vary depending on your interaction with our services. Message and data rates may apply.",
+  },
+  {
     title: "SMS and Messaging Data — No Third-Party Sharing",
     body: "We take your messaging privacy seriously. Mobile opt-in data and consent, including your phone number and message history, will not be shared, sold, rented, or transferred to any third parties or affiliates for marketing, promotional, or any other purposes. This data is used exclusively to deliver the messaging services you have requested and to provide customer support. All categories of data we collect are used only for the stated purposes above.",
   },
   {
-    title: "How We Obtain Consent",
-    body: "We obtain your consent to send SMS or other messages through a clear opt-in process. This includes submitting a web form with a consent checkbox, initiating a conversation with us directly, or explicitly requesting to receive communications. By opting in, you agree to receive messages related to your inquiry, account, or requested service. Consent is never a condition of purchase or service.",
+    title: "Opt-In Process",
+    body: "Customers opt in to receive SMS messages by: (1) submitting their phone number through our website contact forms, (2) completing signup or waitlist forms, (3) requesting information via online forms, or (4) verbally consenting during phone conversations. By submitting your phone number, you confirm that you are the authorized user of the mobile number provided and consent to receive communications as described above. Consent is never a condition of purchase or service.",
   },
   {
     title: "Data Retention",
-    body: "We retain your personal information only for as long as necessary to provide our services or as required by applicable law. When information is no longer needed, we securely delete or anonymize it. You may request deletion of your data at any time by contacting us at contact@getbotti.com.",
+    body: "We retain your personal information only for as long as necessary to provide our services or as required by applicable law. When information is no longer needed, we securely delete or anonymize it. You may request deletion of your data at any time by contacting us at botti@getbotti.com.",
   },
   {
     title: "Data Security",
     body: "We implement reasonable and appropriate administrative, technical, and organizational security measures to protect your personal information from unauthorized access, loss, misuse, alteration, or disclosure. While no method of transmission or storage is 100% secure, we are committed to using industry-standard practices to protect your data.",
   },
   {
+    title: "Opt-Out Instructions",
+    body: "You may opt out of receiving SMS messages at any time by: (1) replying STOP to any message, (2) contacting us directly at botti@getbotti.com, or (3) calling us at (877) 565-4888. After you send STOP, you will receive a confirmation message and will no longer receive SMS communications unless you re-subscribe. For assistance, reply HELP to any message.",
+  },
+  {
     title: "Your Rights and Choices",
-    body: "You have the right to opt out of SMS communications at any time by replying STOP to any message you receive from us. Your opt-out request will be processed immediately and you will receive no further messages, except a final confirmation of your opt-out. For assistance, reply HELP or contact us at contact@getbotti.com. You may also request access to, correction of, or deletion of your personal data by contacting us directly.",
+    body: "You have the right to opt out of SMS communications at any time as described above. You may also request access to, correction of, or deletion of your personal data by contacting us at botti@getbotti.com or calling (877) 565-4888.",
   },
   {
     title: "Cookies and Website Data",
@@ -40,7 +48,7 @@ const sections = [
   },
   {
     title: "Children's Privacy",
-    body: "Our services are not directed to individuals under the age of 13. We do not knowingly collect personal information from children. If you believe we have inadvertently collected information from a child, please contact us immediately at contact@getbotti.com.",
+    body: "Our services are not directed to individuals under the age of 13. We do not knowingly collect personal information from children. If you believe we have inadvertently collected information from a child, please contact us immediately at botti@getbotti.com.",
   },
   {
     title: "Policy Updates",
@@ -76,7 +84,7 @@ export default function PrivacyPage() {
               Privacy Policy
             </span>
           </h1>
-          <p style={{ color: "#64748b", fontSize: "0.875rem" }}>Effective date: March 27, 2026 &nbsp;·&nbsp; Business: botti &nbsp;·&nbsp; Website: getbotti.com &nbsp;·&nbsp; Contact: contact@getbotti.com</p>
+          <p style={{ color: "#64748b", fontSize: "0.875rem" }}>Effective date: March 27, 2026 &nbsp;·&nbsp; Business: botti &nbsp;·&nbsp; Website: getbotti.com &nbsp;·&nbsp; Contact: botti@getbotti.com</p>
         </div>
 
         {/* A2P compliance highlight */}
