@@ -332,7 +332,7 @@ export default function HomePage() {
                   Questions about messaging, consent, privacy, or support can be directed to our team. We respond during business hours.
                 </p>
                 <div style={{ marginBottom: "1.75rem", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
-                  {[{ label: "Email", val: "contact@getbotti.com" }, { label: "Hours", val: "Mon–Fri, 9 AM–5 PM" }].map((row) => (
+                  {[{ label: "Email", val: "botti@getbotti.com" }, { label: "Hours", val: "Mon–Fri, 9 AM–5 PM" }].map((row) => (
                     <div key={row.label} style={{ display: "flex", gap: "0.5rem" }}>
                       <span style={{ color: "#64748b", fontSize: "0.875rem", minWidth: "48px" }}>{row.label}:</span>
                       <span style={{ color: "#334155", fontSize: "0.875rem" }}>{row.val}</span>
@@ -477,7 +477,7 @@ export default function HomePage() {
 
             <div className="footer-bottom" style={{ borderTop: "1px solid #e2e8f0", paddingTop: "1.5rem", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "0.75rem" }}>
               <div style={{ color: "#64748b", fontSize: "0.8rem" }}>© 2026 botti. All rights reserved.</div>
-              <div style={{ color: "#64748b", fontSize: "0.8rem" }}>contact@getbotti.com · getbotti.com</div>
+              <div style={{ color: "#64748b", fontSize: "0.8rem" }}>botti@getbotti.com · getbotti.com</div>
             </div>
           </div>
         </footer>
