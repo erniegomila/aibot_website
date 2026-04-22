@@ -5,11 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navLinks = [
+  { label: "Home", href: "/" },
   { label: "About", href: "#about" },
   { label: "Features", href: "#features" },
   { label: "How It Works", href: "#how-it-works" },
   { label: "Try It Out", href: "#try-it" },
-  { label: "Privacy", href: "/privacy" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -82,13 +82,13 @@ export default function Header() {
                 </Link>
               )
             )}
-            <Link
-              href="/terms"
+            <a
+              href="#try-it"
               className="btn-primary"
               style={{ padding: "0.5rem 1.25rem", fontSize: "0.875rem", whiteSpace: "nowrap" }}
             >
-              View Terms
-            </Link>
+              Try It Out
+            </a>
           </nav>
         )}
 
@@ -193,14 +193,14 @@ export default function Header() {
                 </Link>
               )
             )}
-            <Link
-              href="/terms"
+            <a
+              href="#try-it"
               onClick={() => setMenuOpen(false)}
               className="btn-primary"
               style={{ marginTop: "1rem", textAlign: "center", fontSize: "0.9375rem" }}
             >
-              View Terms
-            </Link>
+              Try It Out
+            </a>
           </nav>
         </div>
       )}

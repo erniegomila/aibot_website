@@ -162,8 +162,8 @@ export default function HomePage() {
                 </p>
 
                 <div className="hero-btns" style={{ display: "flex", flexWrap: "wrap", gap: "1rem", marginBottom: "2.5rem" }}>
-                  <Link href="/terms" className="btn-primary">View Terms</Link>
-                  <Link href="/privacy" className="btn-outline">Privacy Policy</Link>
+                  <a href="#try-it" className="btn-primary">Try It Out</a>
+                  <a href="#how-it-works" className="btn-outline">How It Works</a>
                 </div>
 
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "1.25rem" }}>
@@ -433,11 +433,11 @@ export default function HomePage() {
                 <span className="gradient-text">customer conversations?</span>
               </h2>
               <p style={{ color: "#64748b", fontSize: "1.0625rem", lineHeight: 1.75, maxWidth: "480px", margin: "0 auto 2.5rem" }}>
-                Explore our terms, privacy policy, or reach out directly to learn how botti can work for your business.
+                See how botti works or reach out directly to learn how botti can work for your business.
               </p>
               <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
                 <Link href="/contact" className="btn-primary">Contact Us</Link>
-                <Link href="/terms" className="btn-outline">View Terms</Link>
+                <a href="#how-it-works" className="btn-outline">How It Works</a>
               </div>
             </div>
           </div>
