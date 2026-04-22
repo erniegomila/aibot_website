@@ -27,10 +27,6 @@ export default function ContactPage() {
       errs.email = "Please enter a valid email.";
     if (!form.phone.trim()) errs.phone = "Phone number is required.";
     if (!form.message.trim()) errs.message = "Message is required.";
-    if (!agreed.privacy) errs.privacy = "You must agree to the Privacy Policy.";
-    if (!agreed.terms)
-      errs.terms = "You must agree to the Terms and Conditions.";
-    if (!agreed.sms) errs.sms = "You must consent to SMS messaging.";
     return errs;
   }
 
