@@ -56,51 +56,70 @@ function ChatMockup() {
     <div
       className="animate-float"
       style={{
-        background: "#ffffff",
-        border: "1px solid #e2e8f0",
-        borderRadius: "1.25rem",
-        padding: "1.5rem",
-        maxWidth: "360px",
+        background: "#000000",
+        borderRadius: "2.5rem",
+        padding: "0.75rem",
+        maxWidth: "340px",
         width: "100%",
-        boxShadow: "0 24px 80px rgba(0,0,0,0.1), 0 0 40px rgba(67,97,238,0.06)",
+        boxShadow: "0 24px 80px rgba(0,0,0,0.25), 0 0 40px rgba(0,0,0,0.1)",
+        position: "relative",
       }}
     >
-      {/* Header bar */}
-      <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "1.25rem", paddingBottom: "1rem", borderBottom: "1px solid #f1f5f9" }}>
-        <div style={{ width: "36px", height: "36px", borderRadius: "50%", background: "linear-gradient(135deg, #4361ee, #0284c7)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><circle cx="12" cy="12" r="10" opacity="0.3" /><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" fill="white" /></svg>
-        </div>
-        <div>
-          <div style={{ color: "#0f172a", fontWeight: 600, fontSize: "0.875rem" }}>botti Assistant</div>
-          <div style={{ display: "flex", alignItems: "center", gap: "4px", marginTop: "2px" }}>
-            <div style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#22c55e" }} />
-            <span style={{ color: "#64748b", fontSize: "0.75rem" }}>Online</span>
+      {/* iPhone inner screen */}
+      <div style={{ background: "#ffffff", borderRadius: "2rem", overflow: "hidden" }}>
+        {/* Notch / status bar */}
+        <div style={{ background: "#f2f2f7", padding: "0.5rem 1.25rem 0.4rem", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <span style={{ fontSize: "0.7rem", fontWeight: 600, color: "#1c1c1e" }}>9:41</span>
+          <div style={{ width: "80px", height: "24px", background: "#1c1c1e", borderRadius: "12px" }} />
+          <div style={{ display: "flex", gap: "4px", alignItems: "center" }}>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#1c1c1e"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3a4.237 4.237 0 00-6 0zm-4-4l2 2a7.074 7.074 0 0110 0l2-2C15.14 9.14 8.87 9.14 5 13z" /></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#1c1c1e"><rect x="17" y="4" width="4" height="16" rx="1" /><rect x="11" y="8" width="4" height="12" rx="1" /><rect x="5" y="12" width="4" height="8" rx="1" /></svg>
           </div>
         </div>
-      </div>
 
-      {/* Messages */}
-      <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-        <div className="chat-bubble-in">Hi! How can I help you today? 👋</div>
-        <div className="chat-bubble-out">I need help with my account settings.</div>
-        <div className="chat-bubble-in">Of course! I can help you update your account settings. What would you like to change?</div>
-        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", paddingTop: "0.25rem" }}>
-          <div style={{ display: "flex", gap: "3px" }}>
-            {[0, 1, 2].map((i) => (
-              <div key={i} style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#4361ee", animation: `bounce ${0.8 + i * 0.15}s ease-in-out infinite alternate` }} />
-            ))}
+        {/* iMessage header */}
+        <div style={{ background: "#f2f2f7", padding: "0.25rem 1rem 0.6rem", textAlign: "center", borderBottom: "1px solid #d1d1d6" }}>
+          <div style={{ width: "40px", height: "40px", borderRadius: "50%", background: "linear-gradient(135deg, #4361ee, #0284c7)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 0.25rem" }}>
+            <span style={{ color: "#fff", fontWeight: 700, fontSize: "0.9rem" }}>B</span>
           </div>
-          <span style={{ color: "#94a3b8", fontSize: "0.75rem" }}>botti is typing…</span>
+          <div style={{ color: "#1c1c1e", fontWeight: 600, fontSize: "0.8rem" }}>botti</div>
         </div>
-      </div>
 
-      {/* Input bar */}
-      <div style={{ marginTop: "1.25rem", display: "flex", gap: "0.5rem", background: "#f8fafc", borderRadius: "0.75rem", padding: "0.5rem 0.75rem", border: "1px solid #e2e8f0" }}>
-        <span style={{ color: "#94a3b8", fontSize: "0.85rem", flex: 1 }}>Type a message…</span>
-        <div style={{ width: "28px", height: "28px", borderRadius: "0.5rem", background: "linear-gradient(135deg, #4361ee, #5a75f5)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <line x1="22" y1="2" x2="11" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" />
-          </svg>
+        {/* Messages area */}
+        <div style={{ padding: "1rem 0.75rem", display: "flex", flexDirection: "column", gap: "0.5rem", minHeight: "180px", background: "#ffffff" }}>
+          {/* Timestamp */}
+          <div style={{ textAlign: "center", color: "#8e8e93", fontSize: "0.65rem", marginBottom: "0.25rem" }}>Today 2:34 PM</div>
+
+          {/* Incoming (gray) */}
+          <div style={{ display: "flex", justifyContent: "flex-start" }}>
+            <div style={{ background: "#e9e9eb", borderRadius: "1.1rem 1.1rem 1.1rem 0.3rem", padding: "0.55rem 0.85rem", fontSize: "0.85rem", color: "#1c1c1e", maxWidth: "75%", lineHeight: 1.4 }}>
+              Hi, once I get there, where do I park?
+            </div>
+          </div>
+
+          {/* Outgoing (blue) */}
+          <div style={{ display: "flex", justifyContent: "flex-end" }}>
+            <div style={{ background: "#007AFF", borderRadius: "1.1rem 1.1rem 0.3rem 1.1rem", padding: "0.55rem 0.85rem", fontSize: "0.85rem", color: "#ffffff", maxWidth: "75%", lineHeight: 1.4 }}>
+              Hey! There&rsquo;s a free lot right behind the building. Enter from Oak St and you&rsquo;ll see the signs.
+            </div>
+          </div>
+
+          {/* Incoming */}
+          <div style={{ display: "flex", justifyContent: "flex-start" }}>
+            <div style={{ background: "#e9e9eb", borderRadius: "1.1rem 1.1rem 1.1rem 0.3rem", padding: "0.55rem 0.85rem", fontSize: "0.85rem", color: "#1c1c1e", maxWidth: "75%", lineHeight: 1.4 }}>
+              Perfect, thanks! See you in 10 min 🙌
+            </div>
+          </div>
+
+          {/* Delivered indicator */}
+          <div style={{ textAlign: "right", color: "#8e8e93", fontSize: "0.6rem", marginTop: "0.1rem", paddingRight: "0.25rem" }}>Delivered</div>
+        </div>
+
+        {/* iMessage input bar */}
+        <div style={{ padding: "0.4rem 0.6rem 0.6rem", borderTop: "1px solid #e5e5ea", display: "flex", alignItems: "center", gap: "0.5rem" }}>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8e8e93" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="16" /><line x1="8" y1="12" x2="16" y2="12" /></svg>
+          <div style={{ flex: 1, background: "#f2f2f7", borderRadius: "1.25rem", padding: "0.45rem 0.85rem", fontSize: "0.8rem", color: "#8e8e93", border: "1px solid #d1d1d6" }}>iMessage</div>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="#007AFF"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" /></svg>
         </div>
       </div>
     </div>
@@ -124,9 +143,9 @@ export default function HomePage() {
 
   const stats = [
     { value: "24/7", label: "Always-on availability" },
-    { value: "3x", label: "Faster response times" },
-    { value: "100%", label: "Consent-based messaging" },
-    { value: "0", label: "Data sold to third parties" },
+    { value: "10x", label: "Faster response times" },
+    { value: "80%", label: "Less time on routine messages" },
+    { value: "5x", label: "More leads captured automatically" },
   ];
 
   return (
@@ -167,7 +186,7 @@ export default function HomePage() {
                 </div>
 
                 <div style={{ display: "flex", flexWrap: "wrap", gap: "1.25rem" }}>
-                  {["SMS", "WhatsApp", "Web Chat"].map((ch) => (
+                  {["SMS", "WhatsApp"].map((ch) => (
                     <div key={ch} style={{ display: "flex", alignItems: "center", gap: "0.4rem", color: "#4361ee", fontSize: "0.85rem", fontWeight: 600 }}>
                       <IconCheck /> {ch}
                     </div>
