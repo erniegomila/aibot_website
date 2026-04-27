@@ -13,6 +13,7 @@ export default function DemoPage() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
 
   function validate() {
@@ -25,12 +26,31 @@ export default function DemoPage() {
     return errs;
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     const errs = validate();
     setErrors(errs);
-    if (Object.keys(errs).length === 0) {
+    if (Object.keys(errs).length > 0) return;
+
+    setSending(true);
+    try {
+      await fetch("https://formsubmit.co/ajax/botti@getbotti.com", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          company: form.company,
+          message: form.message,
+          _subject: "New Demo Request from " + form.name,
+        }),
+      });
       setSubmitted(true);
+    } catch {
+      setSubmitted(true);
+    } finally {
+      setSending(false);
     }
   }
 
@@ -411,34 +431,42 @@ export default function DemoPage() {
             {/* Submit */}
             <button
               type="submit"
+              disabled={sending}
               className="btn-primary"
               style={{
                 width: "100%",
                 padding: "0.85rem",
                 fontSize: "1rem",
-                cursor: "pointer",
+                cursor: sending ? "not-allowed" : "pointer",
                 border: "none",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 gap: "0.5rem",
+                opacity: sending ? 0.7 : 1,
               }}
             >
-              <svg
-                width="18"
-                height="18"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                />
-              </svg>
-              Request My Free Demo
+              {sending ? (
+                "Sending..."
+              ) : (
+                <>
+                  <svg
+                    width="18"
+                    height="18"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  Request My Free Demo
+                </>
+              )}
             </button>
           </form>
         </div>

@@ -17,6 +17,7 @@ export default function ContactPage() {
     sms: false,
   });
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
 
   function validate() {
@@ -30,12 +31,30 @@ export default function ContactPage() {
     return errs;
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     const errs = validate();
     setErrors(errs);
-    if (Object.keys(errs).length === 0) {
+    if (Object.keys(errs).length > 0) return;
+
+    setSending(true);
+    try {
+      await fetch("https://formsubmit.co/ajax/botti@getbotti.com", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          phone: form.phone,
+          message: form.message,
+          _subject: "New Contact Form Message from " + form.name,
+        }),
+      });
       setSubmitted(true);
+    } catch {
+      setSubmitted(true);
+    } finally {
+      setSending(false);
     }
   }
 
@@ -567,34 +586,42 @@ export default function ContactPage() {
             {/* Submit */}
             <button
               type="submit"
+              disabled={sending}
               className="btn-primary"
               style={{
                 width: "100%",
                 padding: "0.85rem",
                 fontSize: "1rem",
-                cursor: "pointer",
+                cursor: sending ? "not-allowed" : "pointer",
                 border: "none",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 gap: "0.5rem",
+                opacity: sending ? 0.7 : 1,
               }}
             >
-              <svg
-                width="18"
-                height="18"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-                />
-              </svg>
-              Send Message
+              {sending ? (
+                "Sending..."
+              ) : (
+                <>
+                  <svg
+                    width="18"
+                    height="18"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                    />
+                  </svg>
+                  Send Message
+                </>
+              )}
             </button>
           </form>
 
