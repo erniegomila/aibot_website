@@ -90,24 +90,31 @@ function ChatMockup() {
           {/* Timestamp */}
           <div style={{ textAlign: "center", color: "#8e8e93", fontSize: "0.65rem", marginBottom: "0.25rem" }}>Today 2:34 PM</div>
 
-          {/* Incoming (gray) */}
-          <div style={{ display: "flex", justifyContent: "flex-start" }}>
-            <div style={{ background: "#e9e9eb", borderRadius: "1.1rem 1.1rem 1.1rem 0.3rem", padding: "0.55rem 0.85rem", fontSize: "0.85rem", color: "#1c1c1e", maxWidth: "75%", lineHeight: 1.4 }}>
-              Hi, once I get there, where do I park?
-            </div>
-          </div>
-
-          {/* Outgoing (blue) */}
+          {/* Customer (blue - outgoing) */}
           <div style={{ display: "flex", justifyContent: "flex-end" }}>
             <div style={{ background: "#007AFF", borderRadius: "1.1rem 1.1rem 0.3rem 1.1rem", padding: "0.55rem 0.85rem", fontSize: "0.85rem", color: "#ffffff", maxWidth: "75%", lineHeight: 1.4 }}>
-              Hey! There&rsquo;s a free lot right behind the building. Enter from Oak St and you&rsquo;ll see the signs.
+              Hey, are you guys open tomorrow? I need to book an appointment.
             </div>
           </div>
 
-          {/* Incoming */}
+          {/* botti reply (gray - incoming) */}
           <div style={{ display: "flex", justifyContent: "flex-start" }}>
             <div style={{ background: "#e9e9eb", borderRadius: "1.1rem 1.1rem 1.1rem 0.3rem", padding: "0.55rem 0.85rem", fontSize: "0.85rem", color: "#1c1c1e", maxWidth: "75%", lineHeight: 1.4 }}>
-              Perfect, thanks! See you in 10 min 🙌
+              Hi! Yes, we&rsquo;re open tomorrow 9 AM–6 PM. I can book you in — what time works best?
+            </div>
+          </div>
+
+          {/* Customer (blue) */}
+          <div style={{ display: "flex", justifyContent: "flex-end" }}>
+            <div style={{ background: "#007AFF", borderRadius: "1.1rem 1.1rem 0.3rem 1.1rem", padding: "0.55rem 0.85rem", fontSize: "0.85rem", color: "#ffffff", maxWidth: "75%", lineHeight: 1.4 }}>
+              2 PM would be perfect 🙌
+            </div>
+          </div>
+
+          {/* botti reply (gray) */}
+          <div style={{ display: "flex", justifyContent: "flex-start" }}>
+            <div style={{ background: "#e9e9eb", borderRadius: "1.1rem 1.1rem 1.1rem 0.3rem", padding: "0.55rem 0.85rem", fontSize: "0.85rem", color: "#1c1c1e", maxWidth: "75%", lineHeight: 1.4 }}>
+              Done! You&rsquo;re booked for 2 PM tomorrow. See you then!
             </div>
           </div>
 
