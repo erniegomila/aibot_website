@@ -162,7 +162,7 @@ export default function HomePage() {
                 </p>
 
                 <div className="hero-btns" style={{ display: "flex", flexWrap: "wrap", gap: "1rem", marginBottom: "2.5rem" }}>
-                  <a href="#try-it" className="btn-primary">Try It Out</a>
+                  <Link href="/demo" className="btn-primary">Book a Free Demo</Link>
                   <a href="#how-it-works" className="btn-outline">How It Works</a>
                 </div>
 
@@ -332,7 +332,7 @@ export default function HomePage() {
                   Questions about messaging, consent, privacy, or support can be directed to our team. We respond during business hours.
                 </p>
                 <div style={{ marginBottom: "1.75rem", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
-                  {[{ label: "Email", val: "botti@getbotti.com" }, { label: "Hours", val: "Mon–Fri, 9 AM–5 PM" }].map((row) => (
+                  {[{ label: "Email", val: "botti@getbotti.com" }].map((row) => (
                     <div key={row.label} style={{ display: "flex", gap: "0.5rem" }}>
                       <span style={{ color: "#64748b", fontSize: "0.875rem", minWidth: "48px" }}>{row.label}:</span>
                       <span style={{ color: "#334155", fontSize: "0.875rem" }}>{row.val}</span>
@@ -399,7 +399,7 @@ export default function HomePage() {
                   </div>
 
                   <div style={{ color: "#94a3b8", fontSize: "0.8rem", marginBottom: "1.75rem" }}>
-                    SMS · Available Mon–Fri, 9 AM–5 PM
+                    SMS
                   </div>
 
                   <a
@@ -436,8 +436,8 @@ export default function HomePage() {
                 See how botti works or reach out directly to learn how botti can work for your business.
               </p>
               <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
-                <Link href="/contact" className="btn-primary">Contact Us</Link>
-                <a href="#how-it-works" className="btn-outline">How It Works</a>
+                <Link href="/demo" className="btn-primary">Book a Free Demo</Link>
+                <Link href="/contact" className="btn-outline">Contact Us</Link>
               </div>
             </div>
           </div>

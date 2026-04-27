@@ -11,6 +11,7 @@ const navLinks = [
   { label: "How It Works", href: "#how-it-works" },
   { label: "Try It Out", href: "#try-it" },
   { label: "Contact", href: "/contact" },
+  { label: "Book a Demo", href: "/demo" },
 ];
 
 const BREAKPOINT = 900;
@@ -82,13 +83,13 @@ export default function Header() {
                 </Link>
               )
             )}
-            <a
-              href="#try-it"
+            <Link
+              href="/demo"
               className="btn-primary"
               style={{ padding: "0.5rem 1.25rem", fontSize: "0.875rem", whiteSpace: "nowrap" }}
             >
-              Try It Out
-            </a>
+              Book a Demo
+            </Link>
           </nav>
         )}
 
@@ -193,14 +194,14 @@ export default function Header() {
                 </Link>
               )
             )}
-            <a
-              href="#try-it"
+            <Link
+              href="/demo"
               onClick={() => setMenuOpen(false)}
               className="btn-primary"
               style={{ marginTop: "1rem", textAlign: "center", fontSize: "0.9375rem" }}
             >
-              Try It Out
-            </a>
+              Book a Demo
+            </Link>
           </nav>
         </div>
       )}
