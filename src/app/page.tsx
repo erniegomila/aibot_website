@@ -262,10 +262,10 @@ export default function HomePage() {
                     <span style={{ color: "#0f172a", fontWeight: 700, fontSize: "1.1rem" }}>botti</span>
                   </div>
                   <p style={{ color: "#64748b", lineHeight: 1.75, fontSize: "0.9375rem" }}>
-                    botti is a customer messaging platform designed to help businesses communicate more efficiently. Our system uses AI to answer common questions, provide service information, improve response times, and route conversations to a human when needed.
+                    We built botti because we were tired of AI bots that waste your time — the ones that loop you in circles and never actually help. botti is different. It gives your customers real answers instantly, saves your team hours every day, and hands off to a human the moment it needs to.
                   </p>
                   <div style={{ marginTop: "1.5rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-                    {["AI answers common questions instantly", "Routes to human agents when needed", "Works across SMS, WhatsApp & web"].map((item) => (
+                    {["Saves your team hours on repetitive questions", "Actually helps — no runarounds or dead ends", "Seamless handoff to a real person when needed", "Works across SMS & WhatsApp"].map((item) => (
                       <div key={item} style={{ display: "flex", alignItems: "center", gap: "0.625rem" }}>
                         <div style={{ width: "20px", height: "20px", borderRadius: "50%", background: "rgba(67,97,238,0.1)", border: "1px solid rgba(67,97,238,0.2)", display: "flex", alignItems: "center", justifyContent: "center", color: "#4361ee", flexShrink: 0 }}>
                           <IconCheck />
