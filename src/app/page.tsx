@@ -143,9 +143,10 @@ export default function HomePage() {
   ];
 
   const steps = [
-    { n: "01", title: "Customer Opts In", text: "Users provide consent by submitting a form, starting a conversation, or requesting communication about services." },
-    { n: "02", title: "Helpful Messages Sent", text: "Messages include support responses, appointment or service information, and requested follow-ups — sent at the right moment." },
-    { n: "03", title: "Opt Out Anytime", text: "Recipients can stop receiving SMS messages at any time by replying STOP. We handle it immediately, no questions asked." },
+    { n: "01", title: "Build Your Knowledge Base", text: "Add your business info, FAQs, services, hours, and policies. botti learns everything it needs to answer customer questions accurately on your behalf." },
+    { n: "02", title: "Customers Chat with botti", text: "When customers text your business, botti responds instantly with helpful, accurate answers — 24/7, no wait times, no missed messages." },
+    { n: "03", title: "Handoffs & Admin Dashboard", text: "When a conversation needs a human touch, botti hands it off to your team seamlessly. Track every chat, monitor performance, and manage everything from one dashboard." },
+    { n: "04", title: "Your Data, Your Decisions", text: "Own all your customer data. See exactly how much time you're saving, how many leads botti captures, and where conversations convert — so you can make smarter business decisions." },
   ];
 
   const stats = [
@@ -307,7 +308,7 @@ export default function HomePage() {
             <div style={{ textAlign: "center", marginBottom: "3.5rem" }}>
               <div className="section-label" style={{ margin: "0 auto 1.25rem" }}>How It Works</div>
               <h2 style={{ fontSize: "clamp(1.75rem, 3.5vw, 2.75rem)", fontWeight: 800, color: "#0f172a", letterSpacing: "-0.02em", lineHeight: 1.2 }}>
-                Simple, transparent, <span className="gradient-text">consent-first</span>
+                Three steps to <span className="gradient-text">smarter conversations</span>
               </h2>
             </div>
 
@@ -319,13 +320,6 @@ export default function HomePage() {
                   </div>
                   <h3 style={{ color: "#0f172a", fontWeight: 700, fontSize: "1.125rem", marginBottom: "0.875rem" }}>{s.title}</h3>
                   <p style={{ color: "#64748b", fontSize: "0.9rem", lineHeight: 1.75 }}>{s.text}</p>
-                  {i === 2 && (
-                    <div style={{ marginTop: "1.25rem" }}>
-                      <span style={{ padding: "0.25rem 0.75rem", borderRadius: "9999px", background: "rgba(34,197,94,0.1)", border: "1px solid rgba(34,197,94,0.25)", color: "#16a34a", fontSize: "0.8rem", fontWeight: 600 }}>
-                        Reply STOP to opt out
-                      </span>
-                    </div>
-                  )}
                 </div>
               ))}
             </div>
