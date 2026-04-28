@@ -147,7 +147,6 @@ export default function HomePage() {
     { n: "02", title: "Build Your Knowledge Base", text: "Add your business info, FAQs, services, hours, and policies. botti learns everything it needs to answer customer questions accurately on your behalf." },
     { n: "03", title: "Customers Chat with botti", text: "When customers text your business, botti responds instantly with helpful, accurate answers — 24/7, no wait times, no missed messages." },
     { n: "04", title: "Handoffs & Admin Dashboard", text: "When a conversation needs a human touch, botti hands it off to your team seamlessly. Track every chat, monitor performance, and manage everything from one dashboard." },
-    { n: "05", title: "Your Data, Your Decisions", text: "Own all your customer data. See exactly how much time you're saving, how many leads botti captures, and where conversations convert — so you can make smarter business decisions." },
   ];
 
   const stats = [
