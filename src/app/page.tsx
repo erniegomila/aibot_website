@@ -184,7 +184,7 @@ export default function HomePage() {
                 </h1>
 
                 <p className="hero-p" style={{ fontSize: "1.125rem", lineHeight: 1.75, color: "#64748b", marginBottom: "2.5rem", maxWidth: "480px" }}>
-                  botti helps businesses respond faster through web chat, SMS, and WhatsApp with AI-powered messaging and seamless human handoff when needed.
+                  botti saves your team hours every day by handling customer messages automatically through SMS and WhatsApp — so you can focus on running your business.
                 </p>
 
                 <div className="hero-btns" style={{ display: "flex", flexWrap: "wrap", gap: "1rem", marginBottom: "2.5rem" }}>
