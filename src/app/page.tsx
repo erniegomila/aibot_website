@@ -139,7 +139,7 @@ export default function HomePage() {
     { icon: <IconChat />, title: "Multi-Channel Messaging", desc: "Reach customers on web chat, SMS, and WhatsApp — all from one unified platform that keeps every conversation in sync." },
     { icon: <IconZap />, title: "AI-Powered Responses", desc: "botti handles routine inquiries instantly, giving your team time back while customers get fast, accurate answers 24/7." },
     { icon: <IconUsers />, title: "Seamless Human Handoff", desc: "When a conversation needs a personal touch, botti routes it to the right person without any friction or repeated context." },
-    { icon: <IconShield />, title: "Privacy & Compliance", desc: "Built with TCPA compliance in mind — clear opt-in consent, instant opt-out via STOP, and full transparency for your customers." },
+    { icon: <IconShield />, title: "Dashboard & Admin Portal", desc: "Manage all your conversations, monitor bot performance, track leads, and take over chats when needed — all from one centralized dashboard." },
   ];
 
   const steps = [
