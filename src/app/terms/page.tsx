@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Terms & Conditions",
+  description:
+    "Review botti's terms and conditions including SMS messaging terms, opt-in/opt-out processes, and service usage policies.",
+};
 
 const sections = [
   {

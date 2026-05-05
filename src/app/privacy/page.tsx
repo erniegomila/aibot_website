@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "Learn how botti collects, uses, and protects your personal information. Read our full privacy policy including SMS consent and data practices.",
+};
 
 const sections = [
   {
