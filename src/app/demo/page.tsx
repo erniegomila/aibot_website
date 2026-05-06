@@ -12,6 +12,11 @@ export default function DemoPage() {
     company: "",
     message: "",
   });
+  const [agreed, setAgreed] = useState({
+    privacy: false,
+    terms: false,
+    sms: false,
+  });
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -426,6 +431,146 @@ export default function DemoPage() {
                 onFocus={(e) => (e.target.style.borderColor = "#4361ee")}
                 onBlur={(e) => (e.target.style.borderColor = "#cbd5e1")}
               />
+            </div>
+
+            {/* Divider */}
+            <hr
+              style={{
+                border: "none",
+                borderTop: "1px solid #e2e8f0",
+                margin: "1.5rem 0",
+              }}
+            />
+
+            {/* Agreements */}
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                gap: "0.85rem",
+                marginBottom: "1.75rem",
+              }}
+            >
+              {/* Privacy */}
+              <label
+                style={{
+                  display: "flex",
+                  alignItems: "flex-start",
+                  gap: "0.6rem",
+                  cursor: "pointer",
+                  fontSize: "0.875rem",
+                  color: "#475569",
+                  lineHeight: 1.5,
+                }}
+              >
+                <input
+                  type="checkbox"
+                  checked={agreed.privacy}
+                  onChange={() =>
+                    setAgreed({ ...agreed, privacy: !agreed.privacy })
+                  }
+                  style={{
+                    marginTop: "0.2rem",
+                    accentColor: "#4361ee",
+                    width: "16px",
+                    height: "16px",
+                    flexShrink: 0,
+                  }}
+                />
+                <span>
+                  I agree to the{" "}
+                  <Link
+                    href="/privacy"
+                    style={{
+                      color: "#4361ee",
+                      textDecoration: "underline",
+                      fontWeight: 500,
+                    }}
+                  >
+                    Privacy Policy
+                  </Link>
+                  .
+                </span>
+              </label>
+
+              {/* Terms */}
+              <label
+                style={{
+                  display: "flex",
+                  alignItems: "flex-start",
+                  gap: "0.6rem",
+                  cursor: "pointer",
+                  fontSize: "0.875rem",
+                  color: "#475569",
+                  lineHeight: 1.5,
+                }}
+              >
+                <input
+                  type="checkbox"
+                  checked={agreed.terms}
+                  onChange={() =>
+                    setAgreed({ ...agreed, terms: !agreed.terms })
+                  }
+                  style={{
+                    marginTop: "0.2rem",
+                    accentColor: "#4361ee",
+                    width: "16px",
+                    height: "16px",
+                    flexShrink: 0,
+                  }}
+                />
+                <span>
+                  I agree to the{" "}
+                  <Link
+                    href="/terms"
+                    style={{
+                      color: "#4361ee",
+                      textDecoration: "underline",
+                      fontWeight: 500,
+                    }}
+                  >
+                    Terms and Conditions
+                  </Link>
+                  .
+                </span>
+              </label>
+
+              {/* SMS Consent */}
+              <label
+                style={{
+                  display: "flex",
+                  alignItems: "flex-start",
+                  gap: "0.6rem",
+                  cursor: "pointer",
+                  fontSize: "0.875rem",
+                  color: "#475569",
+                  lineHeight: 1.5,
+                }}
+              >
+                <input
+                  type="checkbox"
+                  checked={agreed.sms}
+                  onChange={() => setAgreed({ ...agreed, sms: !agreed.sms })}
+                  style={{
+                    marginTop: "0.2rem",
+                    accentColor: "#4361ee",
+                    width: "16px",
+                    height: "16px",
+                    flexShrink: 0,
+                  }}
+                />
+                <span>
+                  Yes, I agree to receive Customer Care messages from botti at
+                  the phone number provided above. I understand that message
+                  frequency varies based on my inquiry and account activity,
+                  message and data rates may apply, and consent is not a
+                  condition of purchase or service. You can unsubscribe at any
+                  time by replying <strong>STOP</strong>. Reply{" "}
+                  <strong>HELP</strong> for assistance. By checking this box, I
+                  provide my express written consent to receive automated text
+                  messages.
+                </span>
+              </label>
             </div>
 
             {/* Submit */}

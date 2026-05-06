@@ -564,9 +564,15 @@ export default function ContactPage() {
                   }}
                 />
                 <span>
-                  I consent to receive SMS messages from botti. Message and data
-                  rates may apply. You can unsubscribe at any time by replying{" "}
-                  <strong>STOP</strong>.
+                  Yes, I agree to receive Customer Care messages from botti at
+                  the phone number provided above. I understand that message
+                  frequency varies based on my inquiry and account activity,
+                  message and data rates may apply, and consent is not a
+                  condition of purchase or service. You can unsubscribe at any
+                  time by replying <strong>STOP</strong>. Reply{" "}
+                  <strong>HELP</strong> for assistance. By checking this box, I
+                  provide my express written consent to receive automated text
+                  messages.
                 </span>
               </label>
               {errors.sms && (
