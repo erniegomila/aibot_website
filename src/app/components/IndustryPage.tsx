@@ -283,6 +283,7 @@ export default function IndustryPage({ content }: { content: IndustryContent }) 
               <Link href="/industries/restaurants" style={{ color: "#4361ee", fontWeight: 600, fontSize: "0.9375rem" }}>Restaurants →</Link>
               <Link href="/industries/healthcare" style={{ color: "#4361ee", fontWeight: 600, fontSize: "0.9375rem" }}>Healthcare & Med Spas →</Link>
               <Link href="/industries/home-services" style={{ color: "#4361ee", fontWeight: 600, fontSize: "0.9375rem" }}>Home Services →</Link>
+              <Link href="/industries/hoas" style={{ color: "#4361ee", fontWeight: 600, fontSize: "0.9375rem" }}>HOAs →</Link>
             </div>
           </div>
         </section>
