@@ -36,6 +36,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://getbotti.com/industries/photography</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://getbotti.com/industries/auto</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://getbotti.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

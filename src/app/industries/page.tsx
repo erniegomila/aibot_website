@@ -59,6 +59,29 @@ const industries = [
       </svg>
     ),
   },
+  {
+    href: "/industries/photography",
+    title: "Photography & Videography",
+    desc: "Reply to inquiries instantly, share packages, and book consults. For wedding, real estate, and content creators.",
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z" />
+        <circle cx="12" cy="13" r="4" />
+      </svg>
+    ),
+  },
+  {
+    href: "/industries/auto",
+    title: "Auto Repair & Dealerships",
+    desc: "Book service appointments, send repair updates, and capture sales leads. For shops and dealerships of all sizes.",
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M14 16H9m10 0h3v-3.15a1 1 0 00-.84-.99L16 11l-2.7-3.6a1 1 0 00-.8-.4H5.24a2 2 0 00-1.8 1.1l-.8 1.63A6 6 0 002 12.42V16h2" />
+        <circle cx="6.5" cy="16.5" r="2.5" />
+        <circle cx="16.5" cy="16.5" r="2.5" />
+      </svg>
+    ),
+  },
 ];
 
 export default function IndustriesPage() {
