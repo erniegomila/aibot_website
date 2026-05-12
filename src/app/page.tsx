@@ -190,6 +190,7 @@ export default function HomePage() {
 
                 <div className="hero-btns" style={{ display: "flex", flexWrap: "wrap", gap: "1rem", marginBottom: "2.5rem" }}>
                   <Link href="/demo" className="btn-primary">Book a Free Demo</Link>
+                  <a href="#try-it" className="btn-primary">Try It Out</a>
                   <a href="#how-it-works" className="btn-outline">How It Works</a>
                 </div>
 
