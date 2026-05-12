@@ -43,11 +43,11 @@ const sections = [
   },
   {
     title: "Opt-Out Instructions",
-    body: "You may opt out of receiving SMS messages at any time by: (1) replying STOP to any message, (2) contacting us directly at botti@getbotti.com, or (3) calling us at (877) 565-4888. After you send STOP, you will receive a confirmation message and will no longer receive SMS communications unless you re-subscribe. For assistance, reply HELP to any message.",
+    body: "You may opt out of receiving SMS messages at any time by: (1) replying STOP to any message, (2) contacting us directly at botti@getbotti.com, or (3) calling us at (786) 808-1203. After you send STOP, you will receive a confirmation message and will no longer receive SMS communications unless you re-subscribe. For assistance, reply HELP to any message.",
   },
   {
     title: "Your Rights and Choices",
-    body: "You have the right to opt out of SMS communications at any time as described above. You may also request access to, correction of, or deletion of your personal data by contacting us at botti@getbotti.com or calling (877) 565-4888.",
+    body: "You have the right to opt out of SMS communications at any time as described above. You may also request access to, correction of, or deletion of your personal data by contacting us at botti@getbotti.com or calling (786) 808-1203.",
   },
   {
     title: "Cookies and Website Data",

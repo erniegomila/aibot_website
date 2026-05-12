@@ -415,7 +415,7 @@ export default function HomePage() {
                   </div>
 
                   <div className="phone-number" style={{ fontSize: "2rem", fontWeight: 800, color: "#0f172a", letterSpacing: "0.02em", marginBottom: "0.5rem" }}>
-                    (555) 867-5309
+                    (786) 808-1203
                   </div>
 
                   <div style={{ color: "#94a3b8", fontSize: "0.8rem", marginBottom: "1.75rem" }}>
@@ -423,7 +423,7 @@ export default function HomePage() {
                   </div>
 
                   <a
-                    href="sms:+15558675309"
+                    href="sms:+17868081203"
                     className="btn-primary"
                     style={{ display: "block", textAlign: "center", fontSize: "0.9375rem" }}
                   >
