@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Header from "./components/Header";
+import ChatMockup from "./components/ChatMockup";
 
 /* ─── SVG Icons ──────────────────────────────────────────── */
 function IconChat() {
@@ -47,89 +48,6 @@ function IconCheck() {
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
       <polyline points="20 6 9 17 4 12" />
     </svg>
-  );
-}
-
-/* ─── Chat Mockup ─────────────────────────────────────────── */
-function ChatMockup() {
-  return (
-    <div
-      className="animate-float"
-      style={{
-        background: "#000000",
-        borderRadius: "2.5rem",
-        padding: "0.75rem",
-        maxWidth: "340px",
-        width: "100%",
-        boxShadow: "0 24px 80px rgba(0,0,0,0.25), 0 0 40px rgba(0,0,0,0.1)",
-        position: "relative",
-      }}
-    >
-      {/* iPhone inner screen */}
-      <div style={{ background: "#ffffff", borderRadius: "2rem", overflow: "hidden" }}>
-        {/* Notch / status bar */}
-        <div style={{ background: "#f2f2f7", padding: "0.5rem 1.25rem 0.4rem", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <span style={{ fontSize: "0.7rem", fontWeight: 600, color: "#1c1c1e" }}>9:41</span>
-          <div style={{ width: "80px", height: "24px", background: "#1c1c1e", borderRadius: "12px" }} />
-          <div style={{ display: "flex", gap: "4px", alignItems: "center" }}>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="#1c1c1e"><path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3a4.237 4.237 0 00-6 0zm-4-4l2 2a7.074 7.074 0 0110 0l2-2C15.14 9.14 8.87 9.14 5 13z" /></svg>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="#1c1c1e"><rect x="17" y="4" width="4" height="16" rx="1" /><rect x="11" y="8" width="4" height="12" rx="1" /><rect x="5" y="12" width="4" height="8" rx="1" /></svg>
-          </div>
-        </div>
-
-        {/* iMessage header */}
-        <div style={{ background: "#f2f2f7", padding: "0.25rem 1rem 0.6rem", textAlign: "center", borderBottom: "1px solid #d1d1d6" }}>
-          <div style={{ width: "40px", height: "40px", borderRadius: "50%", background: "linear-gradient(135deg, #4361ee, #0284c7)", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 0.25rem" }}>
-            <span style={{ color: "#fff", fontWeight: 700, fontSize: "0.9rem" }}>B</span>
-          </div>
-          <div style={{ color: "#1c1c1e", fontWeight: 600, fontSize: "0.8rem" }}>botti</div>
-        </div>
-
-        {/* Messages area */}
-        <div style={{ padding: "1rem 0.75rem", display: "flex", flexDirection: "column", gap: "0.5rem", minHeight: "180px", background: "#ffffff" }}>
-          {/* Timestamp */}
-          <div style={{ textAlign: "center", color: "#8e8e93", fontSize: "0.65rem", marginBottom: "0.25rem" }}>Today 2:34 PM</div>
-
-          {/* Customer (blue - outgoing) */}
-          <div style={{ display: "flex", justifyContent: "flex-end" }}>
-            <div style={{ background: "#007AFF", borderRadius: "1.1rem 1.1rem 0.3rem 1.1rem", padding: "0.55rem 0.85rem", fontSize: "0.85rem", color: "#ffffff", maxWidth: "75%", lineHeight: 1.4 }}>
-              Hi! I saw your 2BR listing. Can I tour this weekend?
-            </div>
-          </div>
-
-          {/* botti reply (gray - incoming) */}
-          <div style={{ display: "flex", justifyContent: "flex-start" }}>
-            <div style={{ background: "#e9e9eb", borderRadius: "1.1rem 1.1rem 1.1rem 0.3rem", padding: "0.55rem 0.85rem", fontSize: "0.85rem", color: "#1c1c1e", maxWidth: "75%", lineHeight: 1.4 }}>
-              Of course! I have Saturday at 11 AM or Sunday at 2 PM open. Which works better?
-            </div>
-          </div>
-
-          {/* Customer (blue) */}
-          <div style={{ display: "flex", justifyContent: "flex-end" }}>
-            <div style={{ background: "#007AFF", borderRadius: "1.1rem 1.1rem 0.3rem 1.1rem", padding: "0.55rem 0.85rem", fontSize: "0.85rem", color: "#ffffff", maxWidth: "75%", lineHeight: 1.4 }}>
-              Saturday 11 works 🙌
-            </div>
-          </div>
-
-          {/* botti reply (gray) */}
-          <div style={{ display: "flex", justifyContent: "flex-start" }}>
-            <div style={{ background: "#e9e9eb", borderRadius: "1.1rem 1.1rem 1.1rem 0.3rem", padding: "0.55rem 0.85rem", fontSize: "0.85rem", color: "#1c1c1e", maxWidth: "75%", lineHeight: 1.4 }}>
-              Booked! You&rsquo;ll get a reminder Friday. See you Saturday at 11 🏢
-            </div>
-          </div>
-
-          {/* Delivered indicator */}
-          <div style={{ textAlign: "right", color: "#8e8e93", fontSize: "0.6rem", marginTop: "0.1rem", paddingRight: "0.25rem" }}>Delivered</div>
-        </div>
-
-        {/* iMessage input bar */}
-        <div style={{ padding: "0.4rem 0.6rem 0.6rem", borderTop: "1px solid #e5e5ea", display: "flex", alignItems: "center", gap: "0.5rem" }}>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8e8e93" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="16" /><line x1="8" y1="12" x2="16" y2="12" /></svg>
-          <div style={{ flex: 1, background: "#f2f2f7", borderRadius: "1.25rem", padding: "0.45rem 0.85rem", fontSize: "0.8rem", color: "#8e8e93", border: "1px solid #d1d1d6" }}>iMessage</div>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="#007AFF"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" /></svg>
-        </div>
-      </div>
-    </div>
   );
 }
 
