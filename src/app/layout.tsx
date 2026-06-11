@@ -3,21 +3,24 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "botti — AI-Powered Customer Messaging for SMS & WhatsApp",
+    default: "botti — AI Messaging for HOAs & Apartment Management",
     template: "%s | botti",
   },
   description:
-    "botti saves your team hours every day by handling customer messages automatically through SMS and WhatsApp. Book a free demo today.",
+    "botti helps HOAs and apartment management companies schedule more tours, answer resident questions 24/7, and save associates hours every day. Book a free demo.",
   metadataBase: new URL("https://getbotti.com"),
   keywords: [
-    "AI customer messaging",
-    "SMS bot for business",
-    "WhatsApp business bot",
-    "automated customer support",
-    "AI chatbot",
-    "lead generation bot",
-    "business messaging platform",
-    "customer service automation",
+    "AI for HOAs",
+    "AI for apartment management",
+    "apartment tour scheduling automation",
+    "property management chatbot",
+    "HOA resident messaging",
+    "leasing automation",
+    "apartment SMS bot",
+    "homeowners association chatbot",
+    "leasing office automation",
+    "resident communication automation",
+    "apartment AI assistant",
   ],
   authors: [{ name: "botti" }],
   creator: "botti",
@@ -26,9 +29,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://getbotti.com",
     siteName: "botti",
-    title: "botti — AI-Powered Customer Messaging for SMS & WhatsApp",
+    title: "botti — AI Messaging for HOAs & Apartment Management",
     description:
-      "botti saves your team hours every day by handling customer messages automatically through SMS and WhatsApp. Book a free demo today.",
+      "botti helps HOAs and apartment management companies schedule more tours, answer resident questions 24/7, and save associates hours every day. Book a free demo.",
     images: [
       {
         url: "/logo.png",
@@ -40,9 +43,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "botti — AI-Powered Customer Messaging",
+    title: "botti — AI Messaging for HOAs & Apartment Management",
     description:
-      "botti saves your team hours every day by handling customer messages automatically through SMS and WhatsApp.",
+      "Schedule more tours, answer resident questions 24/7, and save your team hours every day.",
     images: ["/logo.png"],
   },
   robots: {

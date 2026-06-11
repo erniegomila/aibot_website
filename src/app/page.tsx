@@ -93,28 +93,28 @@ function ChatMockup() {
           {/* Customer (blue - outgoing) */}
           <div style={{ display: "flex", justifyContent: "flex-end" }}>
             <div style={{ background: "#007AFF", borderRadius: "1.1rem 1.1rem 0.3rem 1.1rem", padding: "0.55rem 0.85rem", fontSize: "0.85rem", color: "#ffffff", maxWidth: "75%", lineHeight: 1.4 }}>
-              Hey, are you guys open tomorrow? I need to book an appointment.
+              Hi! I saw your 2BR listing. Can I tour this weekend?
             </div>
           </div>
 
           {/* botti reply (gray - incoming) */}
           <div style={{ display: "flex", justifyContent: "flex-start" }}>
             <div style={{ background: "#e9e9eb", borderRadius: "1.1rem 1.1rem 1.1rem 0.3rem", padding: "0.55rem 0.85rem", fontSize: "0.85rem", color: "#1c1c1e", maxWidth: "75%", lineHeight: 1.4 }}>
-              Hi! Yes, we&rsquo;re open tomorrow 9 AM–6 PM. I can book you in — what time works best?
+              Of course! I have Saturday at 11 AM or Sunday at 2 PM open. Which works better?
             </div>
           </div>
 
           {/* Customer (blue) */}
           <div style={{ display: "flex", justifyContent: "flex-end" }}>
             <div style={{ background: "#007AFF", borderRadius: "1.1rem 1.1rem 0.3rem 1.1rem", padding: "0.55rem 0.85rem", fontSize: "0.85rem", color: "#ffffff", maxWidth: "75%", lineHeight: 1.4 }}>
-              2 PM would be perfect 🙌
+              Saturday 11 works 🙌
             </div>
           </div>
 
           {/* botti reply (gray) */}
           <div style={{ display: "flex", justifyContent: "flex-start" }}>
             <div style={{ background: "#e9e9eb", borderRadius: "1.1rem 1.1rem 1.1rem 0.3rem", padding: "0.55rem 0.85rem", fontSize: "0.85rem", color: "#1c1c1e", maxWidth: "75%", lineHeight: 1.4 }}>
-              Done! You&rsquo;re booked for 2 PM tomorrow. See you then!
+              Booked! You&rsquo;ll get a reminder Friday. See you Saturday at 11 🏢
             </div>
           </div>
 
@@ -136,24 +136,24 @@ function ChatMockup() {
 /* ─── Page ────────────────────────────────────────────────── */
 export default function HomePage() {
   const features = [
-    { icon: <IconChat />, title: "Multi-Channel Messaging", desc: "Reach customers on web chat, SMS, and WhatsApp — all from one unified platform that keeps every conversation in sync." },
-    { icon: <IconZap />, title: "AI-Powered Responses", desc: "botti handles routine inquiries instantly, giving your team time back while customers get fast, accurate answers 24/7." },
-    { icon: <IconUsers />, title: "Seamless Human Handoff", desc: "When a conversation needs a personal touch, botti routes it to the right person without any friction or repeated context." },
-    { icon: <IconShield />, title: "Dashboard & Admin Portal", desc: "Manage all your conversations, monitor bot performance, track leads, and take over chats when needed — all from one centralized dashboard." },
+    { icon: <IconChat />, title: "Tour Scheduling on Autopilot", desc: "Prospects text in and book a tour right from their phone — botti checks your availability, sends confirmations, and reminders so fewer no-shows and more signed leases." },
+    { icon: <IconZap />, title: "Instant Resident Answers", desc: "Pool hours, gate codes, parking rules, dues, amenity bookings — botti answers every routine resident question 24/7 so your team isn't buried in texts and calls." },
+    { icon: <IconUsers />, title: "Maintenance Request Logging", desc: "Residents report issues by text. botti collects details, photos, and unit numbers, then routes the ticket straight to your management team or vendor." },
+    { icon: <IconShield />, title: "Dashboard & Admin Portal", desc: "Manage every conversation, track tour bookings, monitor maintenance tickets, and take over chats when needed — all from one centralized dashboard." },
   ];
 
   const steps = [
     { n: "01", title: "Meet with Our Team", text: "Talk to our engineers about your specific use case, white-labeling requirements, and everything you need to know to get started." },
-    { n: "02", title: "Build Your Knowledge Base", text: "Add your business info, FAQs, services, hours, and policies. botti learns everything it needs to answer customer questions accurately on your behalf." },
-    { n: "03", title: "Customers Chat with botti", text: "When customers text your business, botti responds instantly with helpful, accurate answers — 24/7, no wait times, no missed messages." },
-    { n: "04", title: "Handoffs & Admin Dashboard", text: "When a conversation needs a human touch, botti hands it off to your team seamlessly. Track every chat, monitor performance, and manage everything from one dashboard." },
+    { n: "02", title: "Build Your Knowledge Base", text: "Add your property info, floor plans, amenities, pricing, policies, and FAQs. botti learns everything it needs to answer prospects and residents accurately on your behalf." },
+    { n: "03", title: "Prospects & Residents Chat with botti", text: "When prospects ask about availability or residents have a question, botti responds instantly with helpful, accurate answers — 24/7, no wait times, no missed leads." },
+    { n: "04", title: "Handoffs & Admin Dashboard", text: "When a conversation needs a human touch, botti hands it off to your leasing or management team seamlessly. Track every chat, every tour, and every ticket from one dashboard." },
   ];
 
   const stats = [
-    { value: "24/7", label: "Always-on availability" },
-    { value: "10x", label: "Faster response times" },
-    { value: "80%", label: "Less time on routine messages" },
-    { value: "5x", label: "More leads captured automatically" },
+    { value: "24/7", label: "Always-on tour scheduling" },
+    { value: "10x", label: "Faster response to prospects" },
+    { value: "80%", label: "Less time on routine resident messages" },
+    { value: "5x", label: "More tours booked automatically" },
   ];
 
   return (
@@ -175,17 +175,17 @@ export default function HomePage() {
               <div className="animate-fade-in-up" style={{ maxWidth: "560px" }}>
                 <div className="section-label" style={{ marginBottom: "1.5rem" }}>
                   <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#4361ee", display: "inline-block" }} />
-                  AI Messaging Platform
+                  AI for HOAs & Property Management
                 </div>
 
                 <h1 className="hero-h1" style={{ fontSize: "clamp(2.4rem, 5vw, 3.75rem)", fontWeight: 800, lineHeight: 1.1, letterSpacing: "-0.02em", color: "#0f172a", marginBottom: "1.5rem" }}>
-                  Smarter customer{" "}
-                  <span className="gradient-text">conversations</span>
-                  {", "}without the busywork.
+                  Book more tours,{" "}
+                  <span className="gradient-text">answer every resident</span>
+                  {", "}automatically.
                 </h1>
 
                 <p className="hero-p" style={{ fontSize: "1.125rem", lineHeight: 1.75, color: "#64748b", marginBottom: "2.5rem", maxWidth: "480px" }}>
-                  botti saves your team hours every day by handling customer messages automatically through SMS and WhatsApp — so you can focus on running your business.
+                  botti helps HOAs and apartment management companies schedule more tours, answer resident questions 24/7, and save associates hours every day — all through simple text messages.
                 </p>
 
                 <div className="hero-btns" style={{ display: "flex", flexWrap: "wrap", gap: "1rem", marginBottom: "2.5rem" }}>
@@ -231,11 +231,11 @@ export default function HomePage() {
             <div style={{ textAlign: "center", marginBottom: "3.5rem" }}>
               <div className="section-label" style={{ margin: "0 auto 1.25rem" }}>What We Do</div>
               <h2 style={{ fontSize: "clamp(1.75rem, 3.5vw, 2.75rem)", fontWeight: 800, color: "#0f172a", letterSpacing: "-0.02em", lineHeight: 1.2 }}>
-                Everything your business needs to{" "}
-                <span className="gradient-text">communicate better</span>
+                Everything HOAs and apartment teams need to{" "}
+                <span className="gradient-text">book more tours and answer faster</span>
               </h2>
               <p style={{ color: "#64748b", fontSize: "1.0625rem", maxWidth: "520px", margin: "1rem auto 0" }}>
-                One platform. Every channel. Instant answers with the human touch when it counts.
+                One platform for tour scheduling, resident questions, and maintenance tickets — with seamless handoff when it counts.
               </p>
             </div>
 
@@ -263,10 +263,10 @@ export default function HomePage() {
                     <span style={{ color: "#0f172a", fontWeight: 700, fontSize: "1.1rem" }}>botti</span>
                   </div>
                   <p style={{ color: "#64748b", lineHeight: 1.75, fontSize: "0.9375rem" }}>
-                    We built botti because we were tired of AI bots that waste your time — the ones that loop you in circles and never actually help. botti is different. It gives your customers real answers instantly, saves your team hours every day, and hands off to a human the moment it needs to.
+                    We built botti for the people running HOAs and apartment buildings — leasing associates, property managers, and board members who are buried in the same questions every day. botti schedules tours, answers resident questions instantly, logs maintenance requests, and hands off to your team the moment it matters.
                   </p>
                   <div style={{ marginTop: "1.5rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-                    {["Saves your team hours on repetitive questions", "Actually helps — no runarounds or dead ends", "Seamless handoff to a real person when needed", "Works across SMS & WhatsApp"].map((item) => (
+                    {["Schedules more tours, even after hours", "Answers resident questions 24/7", "Logs maintenance requests automatically", "Seamless handoff to your leasing team"].map((item) => (
                       <div key={item} style={{ display: "flex", alignItems: "center", gap: "0.625rem" }}>
                         <div style={{ width: "20px", height: "20px", borderRadius: "50%", background: "rgba(67,97,238,0.1)", border: "1px solid rgba(67,97,238,0.2)", display: "flex", alignItems: "center", justifyContent: "center", color: "#4361ee", flexShrink: 0 }}>
                           <IconCheck />
@@ -287,10 +287,10 @@ export default function HomePage() {
               <div>
                 <div className="section-label" style={{ marginBottom: "1.25rem" }}>About botti</div>
                 <h2 style={{ fontSize: "clamp(1.75rem, 3.5vw, 2.5rem)", fontWeight: 800, color: "#0f172a", letterSpacing: "-0.02em", lineHeight: 1.2, marginBottom: "1.25rem" }}>
-                  Built for businesses that value <span className="gradient-text">real conversations</span>
+                  Built for HOAs and <span className="gradient-text">apartment communities</span>
                 </h2>
                 <p style={{ color: "#64748b", lineHeight: 1.8, fontSize: "1rem", marginBottom: "2rem" }}>
-                  We believe the best customer experiences happen when technology handles the routine so your team can focus on what matters — real relationships and real solutions.
+                  We believe leasing teams, property managers, and board members should spend their time with prospects and residents — not buried in repetitive texts. botti handles the routine so your team can focus on what actually moves the needle.
                 </p>
                 <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
                   <Link href="/contact" className="btn-primary" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
@@ -450,11 +450,11 @@ export default function HomePage() {
               <div className="orb orb-blue" style={{ width: "300px", height: "300px", top: "-150px", right: "-100px", filter: "blur(60px)" }} />
               <div className="section-label" style={{ margin: "0 auto 1.5rem" }}>Get Started Today</div>
               <h2 style={{ fontSize: "clamp(1.75rem, 4vw, 3rem)", fontWeight: 800, color: "#0f172a", letterSpacing: "-0.02em", lineHeight: 1.15, marginBottom: "1.25rem", position: "relative" }}>
-                Ready to transform your{" "}
-                <span className="gradient-text">customer conversations?</span>
+                Ready to book more tours and{" "}
+                <span className="gradient-text">give your team time back?</span>
               </h2>
               <p style={{ color: "#64748b", fontSize: "1.0625rem", lineHeight: 1.75, maxWidth: "480px", margin: "0 auto 2.5rem" }}>
-                See how botti works or reach out directly to learn how botti can work for your business.
+                See how botti can help your HOA or apartment community. Book a free demo or reach out to chat with our team.
               </p>
               <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
                 <Link href="/demo" className="btn-primary">Book a Free Demo</Link>
