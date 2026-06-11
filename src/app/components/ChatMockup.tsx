@@ -6,7 +6,7 @@ type Message = { from: "customer" | "botti"; text: string };
 
 const conversation: Message[] = [
   { from: "customer", text: "Hi! I saw your 2BR listing. Can I tour this weekend?" },
-  { from: "botti", text: "Of course! Please book your tour here: bookinglink.com" },
+  { from: "botti", text: "Of course! Please book your tour here: tours.getbotti.com" },
   { from: "customer", text: "Just booked! Thanks" },
   { from: "botti", text: "Great! See you soon!" },
 ];
@@ -68,8 +68,6 @@ export default function ChatMockup() {
   }, []);
 
   const visible = conversation.slice(0, step);
-  const lastBottiVisible =
-    visible.length > 0 && visible[visible.length - 1].from === "botti";
 
   return (
     <>
@@ -188,12 +186,6 @@ export default function ChatMockup() {
               </div>
             )}
 
-            {/* Delivered indicator (only after last botti reply) */}
-            {lastBottiVisible && step === conversation.length && (
-              <div className="msg-anim" style={{ textAlign: "right", color: "#8e8e93", fontSize: "0.6rem", marginTop: "0.1rem", paddingRight: "0.25rem" }}>
-                Delivered
-              </div>
-            )}
           </div>
 
           {/* iMessage input bar */}
