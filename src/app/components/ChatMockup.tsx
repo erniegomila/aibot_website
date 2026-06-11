@@ -6,9 +6,9 @@ type Message = { from: "customer" | "botti"; text: string };
 
 const conversation: Message[] = [
   { from: "customer", text: "Hi! I saw your 2BR listing. Can I tour this weekend?" },
-  { from: "botti", text: "Of course! I have Saturday at 11 AM or Sunday at 2 PM open. Which works better?" },
-  { from: "customer", text: "Saturday 11 works 🙌" },
-  { from: "botti", text: "Booked! You’ll get a reminder Friday. See you Saturday at 11 🏢" },
+  { from: "botti", text: "Of course! Please book your tour here: bookinglink.com" },
+  { from: "customer", text: "Just booked! Thanks" },
+  { from: "botti", text: "Great! See you soon!" },
 ];
 
 const CUSTOMER_DELAY = 1200;
@@ -147,7 +147,17 @@ export default function ChatMockup() {
           </div>
 
           {/* Messages area */}
-          <div style={{ padding: "1rem 0.75rem", display: "flex", flexDirection: "column", gap: "0.5rem", minHeight: "280px", background: "#ffffff" }}>
+          <div
+            style={{
+              padding: "1rem 0.75rem",
+              display: "flex",
+              flexDirection: "column",
+              gap: "0.5rem",
+              height: "320px",
+              background: "#ffffff",
+              overflow: "hidden",
+            }}
+          >
             {/* Timestamp */}
             <div style={{ textAlign: "center", color: "#8e8e93", fontSize: "0.65rem", marginBottom: "0.25rem" }}>Today 2:34 PM</div>
 
