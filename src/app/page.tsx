@@ -54,24 +54,24 @@ function IconCheck() {
 /* ─── Page ────────────────────────────────────────────────── */
 export default function HomePage() {
   const features = [
-    { icon: <IconChat />, title: "Tour Scheduling on Autopilot", desc: "Prospects text in and book a tour right from their phone — botti checks your availability, sends confirmations, and reminders so fewer no-shows and more signed leases." },
-    { icon: <IconZap />, title: "Instant Resident Answers", desc: "Pool hours, gate codes, parking rules, dues, amenity bookings — botti answers every routine resident question 24/7 so your team isn't buried in texts and calls." },
-    { icon: <IconUsers />, title: "Maintenance Request Logging", desc: "Residents report issues by text. botti collects details, photos, and unit numbers, then routes the ticket straight to your management team or vendor." },
-    { icon: <IconShield />, title: "Dashboard & Admin Portal", desc: "Manage every conversation, track tour bookings, monitor maintenance tickets, and take over chats when needed — all from one centralized dashboard." },
+    { icon: <IconChat />, title: "Every Lead Answered in Seconds", desc: "Customers text 3 companies and book with whoever answers first. botti replies instantly with your real pricing, service area, and availability — at 9 PM, on Sundays, while your techs are on a roof." },
+    { icon: <IconZap />, title: "Booking on Autopilot", desc: "botti collects the address, the problem, and photos, then books the service call against your availability. Confirmations and reminders go out automatically — no phone tag, fewer no-shows." },
+    { icon: <IconUsers />, title: "Emergency Escalation", desc: "A burst pipe at midnight gets escalated to a human immediately. A routine tune-up gets booked for the next open slot. botti knows the difference and routes each one right." },
+    { icon: <IconShield />, title: "Dashboard & Admin Portal", desc: "Manage every conversation, track leads and bookings, and take over any chat when needed — all from one centralized dashboard." },
   ];
 
   const steps = [
-    { n: "01", title: "Meet with Our Team", text: "Talk to our engineers about your specific use case, white-labeling requirements, and everything you need to know to get started." },
-    { n: "02", title: "Build Your Knowledge Base", text: "Add your property info, floor plans, amenities, pricing, policies, and FAQs. botti learns everything it needs to answer prospects and residents accurately on your behalf." },
-    { n: "03", title: "Prospects & Residents Chat with botti", text: "When prospects ask about availability or residents have a question, botti responds instantly with helpful, accurate answers — 24/7, no wait times, no missed leads." },
-    { n: "04", title: "Handoffs & Admin Dashboard", text: "When a conversation needs a human touch, botti hands it off to your leasing or management team seamlessly. Track every chat, every tour, and every ticket from one dashboard." },
+    { n: "01", title: "Meet with Our Team", text: "Talk to our engineers about your trade, your pricing, and everything you need to know to get started. Most companies are live in 48 hours." },
+    { n: "02", title: "Build Your Knowledge Base", text: "Add your services, pricing, service area, hours, and FAQs. botti learns everything it needs to answer customers accurately on your behalf — like your best CSR, on their best day." },
+    { n: "03", title: "Customers Text, botti Answers", text: "When a customer asks about a repair, a quote, or an emergency, botti responds instantly with helpful, accurate answers — 24/7, no wait times, no missed jobs." },
+    { n: "04", title: "Handoffs & Admin Dashboard", text: "When a conversation needs a human touch, botti hands it off to you or your dispatcher seamlessly. Track every chat, every lead, and every booking from one dashboard." },
   ];
 
   const stats = [
-    { value: "24/7", label: "Always-on tour scheduling" },
-    { value: "10x", label: "Faster response to prospects" },
-    { value: "80%", label: "Less time on routine resident messages" },
-    { value: "5x", label: "More tours booked automatically" },
+    { value: "24/7", label: "Always-on lead capture" },
+    { value: "78%", label: "Of customers book the first company that responds" },
+    { value: "80%", label: "Less time on routine customer messages" },
+    { value: "48h", label: "From signup to live on your line" },
   ];
 
   return (
@@ -93,17 +93,17 @@ export default function HomePage() {
               <div className="animate-fade-in-up" style={{ maxWidth: "560px" }}>
                 <div className="section-label" style={{ marginBottom: "1.5rem" }}>
                   <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#4361ee", display: "inline-block" }} />
-                  AI for HOAs & Property Management
+                  AI for Home Service Businesses
                 </div>
 
                 <h1 className="hero-h1" style={{ fontSize: "clamp(2.4rem, 5vw, 3.75rem)", fontWeight: 800, lineHeight: 1.1, letterSpacing: "-0.02em", color: "#0f172a", marginBottom: "1.5rem" }}>
-                  Book more tours,{" "}
-                  <span className="gradient-text">answer every resident</span>
+                  Never miss a job,{" "}
+                  <span className="gradient-text">answer every customer</span>
                   {", "}automatically.
                 </h1>
 
                 <p className="hero-p" style={{ fontSize: "1.125rem", lineHeight: 1.75, color: "#64748b", marginBottom: "2.5rem", maxWidth: "480px" }}>
-                  botti helps HOAs and apartment management companies schedule more tours, answer resident questions 24/7, and save associates hours every day — all through simple text messages.
+                  botti answers your customers by text in seconds — quotes, scheduling, emergencies — 24/7, with your real pricing and availability. Built for AC, plumbing, electrical, and every home service trade.
                 </p>
 
                 <div className="hero-btns" style={{ display: "flex", flexWrap: "wrap", gap: "1rem", marginBottom: "2.5rem" }}>
@@ -149,11 +149,11 @@ export default function HomePage() {
             <div style={{ textAlign: "center", marginBottom: "3.5rem" }}>
               <div className="section-label" style={{ margin: "0 auto 1.25rem" }}>What We Do</div>
               <h2 style={{ fontSize: "clamp(1.75rem, 3.5vw, 2.75rem)", fontWeight: 800, color: "#0f172a", letterSpacing: "-0.02em", lineHeight: 1.2 }}>
-                Everything HOAs and apartment teams need to{" "}
-                <span className="gradient-text">book more tours and answer faster</span>
+                Everything home service companies need to{" "}
+                <span className="gradient-text">win the jobs they're missing</span>
               </h2>
               <p style={{ color: "#64748b", fontSize: "1.0625rem", maxWidth: "520px", margin: "1rem auto 0" }}>
-                One platform for tour scheduling, resident questions, and maintenance tickets — with seamless handoff when it counts.
+                One platform for lead capture, booking, and customer questions — with seamless handoff when it counts.
               </p>
             </div>
 
@@ -181,10 +181,10 @@ export default function HomePage() {
                     <span style={{ color: "#0f172a", fontWeight: 700, fontSize: "1.1rem" }}>botti</span>
                   </div>
                   <p style={{ color: "#64748b", lineHeight: 1.75, fontSize: "0.9375rem" }}>
-                    We built botti for the people running HOAs and apartment buildings — leasing associates, property managers, and board members who are buried in the same questions every day. botti schedules tours, answers resident questions instantly, logs maintenance requests, and hands off to your team the moment it matters.
+                    We built botti for the people running home service companies — owners and dispatchers who can't answer the phone with their hands in someone's sink. botti answers every customer instantly, books the job, escalates real emergencies, and hands off to your team the moment it matters.
                   </p>
                   <div style={{ marginTop: "1.5rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-                    {["Schedules more tours, even after hours", "Answers resident questions 24/7", "Logs maintenance requests automatically", "Seamless handoff to your leasing team"].map((item) => (
+                    {["Captures every lead, even after hours", "Answers pricing and service questions 24/7", "Books service calls automatically", "Seamless handoff to you or your dispatcher"].map((item) => (
                       <div key={item} style={{ display: "flex", alignItems: "center", gap: "0.625rem" }}>
                         <div style={{ width: "20px", height: "20px", borderRadius: "50%", background: "rgba(67,97,238,0.1)", border: "1px solid rgba(67,97,238,0.2)", display: "flex", alignItems: "center", justifyContent: "center", color: "#4361ee", flexShrink: 0 }}>
                           <IconCheck />
@@ -205,10 +205,10 @@ export default function HomePage() {
               <div>
                 <div className="section-label" style={{ marginBottom: "1.25rem" }}>About botti</div>
                 <h2 style={{ fontSize: "clamp(1.75rem, 3.5vw, 2.5rem)", fontWeight: 800, color: "#0f172a", letterSpacing: "-0.02em", lineHeight: 1.2, marginBottom: "1.25rem" }}>
-                  Built for HOAs and <span className="gradient-text">apartment communities</span>
+                  Built for the <span className="gradient-text">home service trades</span>
                 </h2>
                 <p style={{ color: "#64748b", lineHeight: 1.8, fontSize: "1rem", marginBottom: "2rem" }}>
-                  We believe leasing teams, property managers, and board members should spend their time with prospects and residents — not buried in repetitive texts. botti handles the routine so your team can focus on what actually moves the needle.
+                  We believe owners and techs should spend their time on the job — not buried in repetitive texts and missed calls. botti handles the routine so you can focus on the work that actually pays.
                 </p>
                 <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
                   <Link href="/contact" className="btn-primary" style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
@@ -368,11 +368,11 @@ export default function HomePage() {
               <div className="orb orb-blue" style={{ width: "300px", height: "300px", top: "-150px", right: "-100px", filter: "blur(60px)" }} />
               <div className="section-label" style={{ margin: "0 auto 1.5rem" }}>Get Started Today</div>
               <h2 style={{ fontSize: "clamp(1.75rem, 4vw, 3rem)", fontWeight: 800, color: "#0f172a", letterSpacing: "-0.02em", lineHeight: 1.15, marginBottom: "1.25rem", position: "relative" }}>
-                Ready to book more tours and{" "}
-                <span className="gradient-text">give your team time back?</span>
+                Ready to stop losing jobs to{" "}
+                <span className="gradient-text">missed messages?</span>
               </h2>
               <p style={{ color: "#64748b", fontSize: "1.0625rem", lineHeight: 1.75, maxWidth: "480px", margin: "0 auto 2.5rem" }}>
-                See how botti can help your HOA or apartment community. Book a free demo or reach out to chat with our team.
+                See how botti can help your service business capture every lead. Book a free demo or reach out to chat with our team.
               </p>
               <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
                 <Link href="/demo" className="btn-primary">Book a Free Demo</Link>

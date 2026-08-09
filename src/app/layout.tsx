@@ -3,24 +3,24 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "botti — AI Messaging for HOAs & Apartment Management",
+    default: "botti — AI Messaging for Home Service Businesses",
     template: "%s | botti",
   },
   description:
-    "botti helps HOAs and apartment management companies schedule more tours, answer resident questions 24/7, and save associates hours every day. Book a free demo.",
+    "botti answers your customers by text in seconds — quotes, scheduling, emergencies — 24/7 with your real pricing. Built for AC, plumbing, electrical, and every home service trade. Book a free demo.",
   metadataBase: new URL("https://getbotti.com"),
   keywords: [
-    "AI for HOAs",
-    "AI for apartment management",
-    "apartment tour scheduling automation",
-    "property management chatbot",
-    "HOA resident messaging",
-    "leasing automation",
-    "apartment SMS bot",
-    "homeowners association chatbot",
-    "leasing office automation",
-    "resident communication automation",
-    "apartment AI assistant",
+    "AI for home services",
+    "HVAC answering service",
+    "plumber chatbot",
+    "AI for contractors",
+    "home services lead capture",
+    "HVAC SMS bot",
+    "electrician booking automation",
+    "service business texting",
+    "after hours answering service HVAC",
+    "quote request automation",
+    "home services AI assistant",
   ],
   authors: [{ name: "botti" }],
   creator: "botti",
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://getbotti.com",
     siteName: "botti",
-    title: "botti — AI Messaging for HOAs & Apartment Management",
+    title: "botti — AI Messaging for Home Service Businesses",
     description:
-      "botti helps HOAs and apartment management companies schedule more tours, answer resident questions 24/7, and save associates hours every day. Book a free demo.",
+      "botti answers your customers by text in seconds — quotes, scheduling, emergencies — 24/7 with your real pricing. Book a free demo.",
     images: [
       {
         url: "/logo.png",
@@ -43,9 +43,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "botti — AI Messaging for HOAs & Apartment Management",
+    title: "botti — AI Messaging for Home Service Businesses",
     description:
-      "Schedule more tours, answer resident questions 24/7, and save your team hours every day.",
+      "Capture every lead, book every job, and answer customers 24/7 — by text, with your real pricing.",
     images: ["/logo.png"],
   },
   robots: {

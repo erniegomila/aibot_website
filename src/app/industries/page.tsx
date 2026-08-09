@@ -16,6 +16,17 @@ export const metadata: Metadata = {
 
 const industries = [
   {
+    href: "/industries/home-services",
+    title: "Home Services",
+    desc: "Capture quote requests, book service calls, and dispatch updates. For plumbers, HVAC, electricians, and more.",
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+        <polyline points="9 22 9 12 15 12 15 22" />
+      </svg>
+    ),
+  },
+  {
     href: "/industries/apartments",
     title: "Apartment Management",
     desc: "Schedule more tours, answer prospect and resident questions 24/7, and log maintenance requests. Built for leasing offices and property management companies.",
@@ -56,17 +67,6 @@ const industries = [
     icon: (
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 2v20M2 12h20" />
-      </svg>
-    ),
-  },
-  {
-    href: "/industries/home-services",
-    title: "Home Services",
-    desc: "Capture quote requests, book service calls, and dispatch updates. For plumbers, HVAC, electricians, and more.",
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-        <polyline points="9 22 9 12 15 12 15 22" />
       </svg>
     ),
   },
