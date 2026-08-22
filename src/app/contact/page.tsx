@@ -39,7 +39,7 @@ export default function ContactPage() {
 
     setSending(true);
     try {
-      await fetch("https://formsubmit.co/ajax/botti@getbotti.com", {
+      await fetch("https://formsubmit.co/ajax/f2e28e65615b15be1620127734ace8ef", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
