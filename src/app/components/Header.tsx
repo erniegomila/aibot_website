@@ -55,7 +55,7 @@ export default function Header() {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          height: "76px",
+          height: "88px",
         }}
       >
         {/* Logo */}
@@ -63,9 +63,9 @@ export default function Header() {
           <Image
             src="/logo.png"
             alt="botti logo"
-            width={56}
-            height={56}
-            style={{ height: "56px", width: "auto", objectFit: "contain" }}
+            width={70}
+            height={70}
+            style={{ height: "70px", width: "auto", objectFit: "contain" }}
             priority
           />
         </Link>
