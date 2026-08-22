@@ -5,10 +5,10 @@ import { useEffect, useState } from "react";
 type Message = { from: "customer" | "botti"; text: string };
 
 const conversation: Message[] = [
-  { from: "customer", text: "Hi, my AC is blowing warm air. Can someone come out today?" },
-  { from: "botti", text: "We can! We have a 2–4 PM window open today — the diagnostic visit is $89. Want me to book it?" },
-  { from: "customer", text: "Yes please, book it" },
-  { from: "botti", text: "You're all set for 2–4 PM today. You'll get a text when your tech is 15 min out 🛠️" },
+  { from: "customer", text: "Hi! Do you have anything available this weekend?" },
+  { from: "botti", text: "We do! You can book here: book.getbotti.com" },
+  { from: "customer", text: "Just booked, thanks!" },
+  { from: "botti", text: "Great — you're all set! See you soon 🙌" },
 ];
 
 const CUSTOMER_DELAY = 1200;
